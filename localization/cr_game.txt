@@ -38,7 +38,7 @@
 @grenade_cr_f1fragsingle_name=1x F1 Frag Grenade
 @grenade_cr_f1frag_name=2x F1 Frag Grenade
 @grenade_cr_f1frag_kit_name=3x F1 Frag Grenade
-@grenade_cr_f1frag_desc=A soviet hand grenade, these are by far the most common types of frag grenades you'd see in Nowheraki.\n\nThe F1 grenade has been supplied to various foreign countries over the years.\n\nUse Frags to take out enemies hidden in cover, but mind the non-combatants.\n\nFuse time: 1.5s\nKill Range: 2m\nInjury Range: 4m
+@grenade_cr_f1frag_desc=A Soviet-era fragmentation hand grenade, it is slightly more powerful in its explosion radius than its modern contemporaries as it was designed as a defensive grenade to be used from behind cover.\n\nIt has a very distinct "pop" sound when thrown, indicating ignition.\n\nUse Frags to take out enemies hidden in cover, but mind the non-combatants.\n\nFuse time: 1.5s\nKill Range: 2.5m\nInjury Range: 5m
 @grenade_cr_teargas_name=2x Tear Gas Grenade
 @grenade_cr_teargas_kit_name=3x Tear Gas Grenade
 @grenade_cr_teargas_desc=Modified version of the smoke grenade, we don't know what the engineers put in this thing, they say it's a secret.\n\nThis thing when inhaled is apparently worse than pepper spray, so the engineers recommend us not to use it too much in tight spaces.\n\nFuse time: Instant\nBurn time: 14s

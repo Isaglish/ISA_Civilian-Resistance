@@ -187,20 +187,20 @@
 				anim2D="">
 			</FX>
 
-			<EffectRange radiusMeters="1.7">
+			<EffectRange radiusMeters="2.0">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
 				<DamageEffect chancePercent="100" damage="100" damageType="1"  armorPenetration="0"/>
 				<ScatterEffect chancePercent="100" armorPenetration="3"/>
 				<SuppressEffect amount="20"/>
 				<SmokeEffect durationMSec="700" />
 			</EffectRange>
-			<EffectRange radiusMeters="2.0">
+			<EffectRange radiusMeters="2.5">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
 				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
 				<ScatterEffect chancePercent="100" armorPenetration="3"/>
 				<SuppressEffect amount="20"/>
 			</EffectRange>
-			<EffectRange radiusMeters="4.2">
+			<EffectRange radiusMeters="4.7">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
 				<DamageEffect chancePercent="50" damage="20" damageType="1"/>
 				<ScatterEffect chancePercent="100" armorPenetration="0"/>
@@ -263,20 +263,20 @@
 				anim2D="">
 			</FX>
 
-			<EffectRange radiusMeters="1.7">
+			<EffectRange radiusMeters="2.0">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
 				<DamageEffect chancePercent="100" damage="100" damageType="1"  armorPenetration="0"/>
 				<ScatterEffect chancePercent="100" armorPenetration="3"/>
 				<SuppressEffect amount="20"/>
 				<SmokeEffect durationMSec="700" />
 			</EffectRange>
-			<EffectRange radiusMeters="2.0">
+			<EffectRange radiusMeters="2.5">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
 				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
 				<ScatterEffect chancePercent="100" armorPenetration="3"/>
 				<SuppressEffect amount="20"/>
 			</EffectRange>
-			<EffectRange radiusMeters="4.2">
+			<EffectRange radiusMeters="4.7">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
 				<DamageEffect chancePercent="50" damage="20" damageType="1"/>
 				<ScatterEffect chancePercent="100" armorPenetration="0"/>
@@ -339,20 +339,20 @@
 				anim2D="">
 			</FX>
 
-			<EffectRange radiusMeters="1.7">
+			<EffectRange radiusMeters="2.0">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
 				<DamageEffect chancePercent="100" damage="100" damageType="1"  armorPenetration="0"/>
 				<ScatterEffect chancePercent="100" armorPenetration="3"/>
 				<SuppressEffect amount="20"/>
 				<SmokeEffect durationMSec="700" />
 			</EffectRange>
-			<EffectRange radiusMeters="2.0">
+			<EffectRange radiusMeters="2.5">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
 				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
 				<ScatterEffect chancePercent="100" armorPenetration="3"/>
 				<SuppressEffect amount="20"/>
 			</EffectRange>
-			<EffectRange radiusMeters="4.2">
+			<EffectRange radiusMeters="4.7">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
 				<DamageEffect chancePercent="50" damage="20" damageType="1"/>
 				<ScatterEffect chancePercent="100" armorPenetration="0"/>
