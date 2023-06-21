@@ -35,9 +35,9 @@
 
 
 # Utilities
-@grenade_cr_rgd5fragsingle_name=1x RGD-5 Grenade
-@grenade_cr_rgd5frag_name=2x RGD-5 Grenade
-@grenade_cr_rgd5frag_kit_name=3x RGD-5 Grenade
+@grenade_cr_rgd5fragsingle_name=1x RGD5 Grenade
+@grenade_cr_rgd5frag_name=2x RGD5 Grenade
+@grenade_cr_rgd5frag_kit_name=3x RGD5 Grenade
 @grenade_cr_rgd5frag_desc=A Soviet-era fragmentation hand grenade, it is slightly more powerful in its explosion radius than its modern contemporaries as it was designed as a defensive grenade to be used from behind cover.\n\nIt produces a distinct sound when thrown, indicating ignition.\n\nUse Frags to take out enemies hidden in cover, but mind the non-combatants.\n\nFuse time: 1.5s\nKill Range: 2.5m\nInjury Range: 5m
 @grenade_cr_teargas_name=2x Tear Gas Grenade
 @grenade_cr_teargas_kit_name=3x Tear Gas Grenade
