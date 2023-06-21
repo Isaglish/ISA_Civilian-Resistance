@@ -20,29 +20,29 @@
 
 	<wp
 		type="THROW_GRENADE"
-		equipment="CR F1 Frag Single"
-		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
-		ttip="@menu_game_cr_f1fg_ttip"
+		equipment="CR RGD5 Frag Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_rgd5frag"
+		ttip="@menu_game_cr_rgd5fg_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_cr_f1fg_none_ttip"
+		ttip_empty="@menu_game_cr_rgd5fg_none_ttip"
 	/>
 
 	<wp
 		type="THROW_GRENADE"
-		equipment="CR F1 Frag"
-		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
-		ttip="@menu_game_cr_f1fg_ttip"
+		equipment="CR RGD5 Frag"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_rgd5frag"
+		ttip="@menu_game_cr_rgd5fg_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_cr_f1fg_none_ttip"
+		ttip_empty="@menu_game_cr_rgd5fg_none_ttip"
 	/>
 
 	<wp
 		type="THROW_GRENADE"
-		equipment="CR F1 Frag Kit"
-		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
-		ttip="@menu_game_cr_f1fg_ttip"
+		equipment="CR RGD5 Frag Kit"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_rgd5frag"
+		ttip="@menu_game_cr_rgd5fg_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_cr_f1fg_none_ttip"
+		ttip_empty="@menu_game_cr_rgd5fg_none_ttip"
 	/>
 
     <wp

@@ -8,7 +8,7 @@ VERSION 0.0.2:
     - Added short hair to Covert
     - Added Tear Gas Grenade
     - Added Mini Bang
-    - Added F1 Frag Grenade
+    - Added RGD-5 Frag Grenade
     - Added Beancan Grenade
     - Added Beancan Impact Grenade
     - Changed the color of Engineer's outfit from gray to yellow

@@ -133,23 +133,23 @@
 		</Projectile>
 	</Grenade>
 
-	<Bind eqp="CR F1 Frag Single">
+	<Bind eqp="CR RGD5 Frag Single">
 		<to name="CRCovert"/>
 		<to name="CRFighter"/>
 	</Bind>
-	<Grenade name="CR F1 Frag Single" inventoryBinding="UtilityPouch"
+	<Grenade name="CR RGD5 Frag Single" inventoryBinding="UtilityPouch"
 			quantity="1"
 
-			tooltip="@grenade_cr_f1fragsingle_name"
-			description="@grenade_cr_f1frag_desc"
-			img="data/models/equipment/cr_f1frag_ui.dds"
+			tooltip="@grenade_cr_rgd5fragsingle_name"
+			description="@grenade_cr_rgd5frag_desc"
+			img="data/models/equipment/cr_rgd5frag_ui.dds"
 			movie="data/movies/frag.ogv"
 
 			animationSet="grenade"
 			soundUse="grenade_use"
 			soundUseVoice="VOX_GEAR_FRAG"
 		>
-		<RenderObject3D model="data/models/equipment/cr_f1frag.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_f1frag.dds"/>
+		<RenderObject3D model="data/models/equipment/cr_rgd5frag.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_rgd5frag.dds"/>
 		<ConcealmentModifier add="-0.5"/>
 		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
 
@@ -161,11 +161,11 @@
 		/>
 
 		<Projectile
-			bodyTemplate="CR F1 Frag"
+			bodyTemplate="CR RGD5 Frag"
 			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
 
 			soundExplosion="frag_expl"
-			soundOnSpawn="cr_f1frag_pop"
+			soundOnSpawn="cr_rgd5frag_pop"
 			soundHitFloor="grenade_hit_floor"
 
 			friendlyFire="true"
@@ -209,23 +209,23 @@
 		</Projectile>
 	</Grenade>
 
-	<Bind eqp="CR F1 Frag">
+	<Bind eqp="CR RGD5 Frag">
 		<to name="CRVeteran"/>
 		<to name="CREngineer"/>
 	</Bind>
-	<Grenade name="CR F1 Frag" inventoryBinding="UtilityPouch"
+	<Grenade name="CR RGD5 Frag" inventoryBinding="UtilityPouch"
 			quantity="2"
 
-			tooltip="@grenade_cr_f1frag_name"
-			description="@grenade_cr_f1frag_desc"
-			img="data/models/equipment/cr_f1frag_ui.dds"
+			tooltip="@grenade_cr_rgd5frag_name"
+			description="@grenade_cr_rgd5frag_desc"
+			img="data/models/equipment/cr_rgd5frag_ui.dds"
 			movie="data/movies/frag.ogv"
 
 			animationSet="grenade"
 			soundUse="grenade_use"
 			soundUseVoice="VOX_GEAR_FRAG"
 		>
-		<RenderObject3D model="data/models/equipment/cr_f1frag.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_f1frag.dds"/>
+		<RenderObject3D model="data/models/equipment/cr_rgd5frag.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_rgd5frag.dds"/>
 		<ConcealmentModifier add="-1"/>
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 
@@ -237,11 +237,11 @@
 		/>
 
 		<Projectile
-			bodyTemplate="CR F1 Frag"
+			bodyTemplate="CR RGD5 Frag"
 			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
 
 			soundExplosion="frag_expl"
-			soundOnSpawn="cr_f1frag_pop"
+			soundOnSpawn="cr_rgd5frag_pop"
 			soundHitFloor="grenade_hit_floor"
 
 			friendlyFire="true"
@@ -285,23 +285,23 @@
 		</Projectile>
 	</Grenade>
 
-	<Bind eqp="CR F1 Frag Kit">
+	<Bind eqp="CR RGD5 Frag Kit">
 		<to name="CRVeteran"/>
 		<to name="CREngineer"/>
 	</Bind>
-	<Grenade name="CR F1 Frag Kit" inventoryBinding="SupportGear1"
+	<Grenade name="CR RGD5 Frag Kit" inventoryBinding="SupportGear1"
 			quantity="3"
 
-			tooltip="@grenade_cr_f1frag_kit_name"
-			description="@grenade_cr_f1frag_desc"
-			img="data/models/equipment/cr_f1frag_kit_ui.dds"
+			tooltip="@grenade_cr_rgd5frag_kit_name"
+			description="@grenade_cr_rgd5frag_desc"
+			img="data/models/equipment/cr_rgd5frag_kit_ui.dds"
 			movie="data/movies/frag.ogv"
 
 			animationSet="grenade"
 			soundUse="grenade_use"
 			soundUseVoice="VOX_GEAR_FRAG"
 		>
-		<RenderObject3D model="data/models/equipment/cr_f1frag.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_f1frag.dds"/>
+		<RenderObject3D model="data/models/equipment/cr_rgd5frag.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_rgd5frag.dds"/>
 		<ConcealmentModifier add="-2"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 
@@ -313,11 +313,11 @@
 		/>
 
 		<Projectile
-			bodyTemplate="CR F1 Frag"
+			bodyTemplate="CR RGD5 Frag"
 			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
 
 			soundExplosion="frag_expl"
-			soundOnSpawn="cr_f1frag_pop"
+			soundOnSpawn="cr_rgd5frag_pop"
 			soundHitFloor="grenade_hit_floor"
 
 			friendlyFire="true"

@@ -1,9 +1,9 @@
 <Sounds>
     <!-- EXPLOSIONS -->
-    <Sound ID="cr_f1frag_pop" channel="game" preload="true">
-        <Path name="data/sounds/sfx/explosions/cr_f1frag_pop_01.wav"/>
-		<Path name="data/sounds/sfx/explosions/cr_f1frag_pop_02.wav"/>
-		<Path name="data/sounds/sfx/explosions/cr_f1frag_pop_03.wav"/>
-		<Path name="data/sounds/sfx/explosions/cr_f1frag_pop_04.wav"/>
+    <Sound ID="cr_rgd5frag_pop" channel="game" preload="true">
+        <Path name="data/sounds/sfx/explosions/cr_rgd5frag_pop_01.wav"/>
+		<Path name="data/sounds/sfx/explosions/cr_rgd5frag_pop_02.wav"/>
+		<Path name="data/sounds/sfx/explosions/cr_rgd5frag_pop_03.wav"/>
+		<Path name="data/sounds/sfx/explosions/cr_rgd5frag_pop_04.wav"/>
     </Sound>
 </Sounds>

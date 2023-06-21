@@ -1,7 +1,7 @@
 <Entities>
-	<Entity name="CR F1 Frag" type="Projectile" hideInEditor="true" scale="1.5">
+	<Entity name="CR RGD5 Frag" type="Projectile" hideInEditor="true" scale="1.5">
 		<PhysicalParams solid="false"/>
-		<RenderObject3D model="data/models/equipment/cr_f1frag.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/cr_f1frag.dds"/>
+		<RenderObject3D model="data/models/equipment/cr_rgd5frag.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/cr_rgd5frag.dds"/>
 		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1.0" sizeY="1.0" disableDepthTest="true" billboard="true">
 			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="350" numLoops="-1" randomizeStartTime="false"/>
 		</RenderObject2D>

@@ -1,5 +1,5 @@
-@menu_game_cr_f1fg_ttip=Throw f1 frag grenade
-@menu_game_cr_f1fg_none_ttip=Out of f1 frag grenades
+@menu_game_cr_rgd5fg_ttip=Throw RGD-5 frag grenade
+@menu_game_cr_rgd5fg_none_ttip=Out of RGD-5 frag grenades
 @menu_game_cr_tg_ttip=Throw tear gas grenade
 @menu_game_cr_tg_none_ttip=Out of tear gas grenades
 @menu_game_cr_bcg_ttip=Throw beancan grenade
