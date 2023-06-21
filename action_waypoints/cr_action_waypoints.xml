@@ -10,20 +10,39 @@
 
 	<wp
 		type="THROW_GRENADE"
+		equipment="CR Tear Gas Kit"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_teargas"
+		ttip="@menu_game_cr_tg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_tg_none_ttip"
+	/>
+
+
+	<wp
+		type="THROW_GRENADE"
 		equipment="CR F1 Frag Single"
 		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
-		ttip="@menu_game_fg_ttip"
+		ttip="@menu_game_cr_f1fg_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_fg_none_ttip"
+		ttip_empty="@menu_game_cr_f1fg_none_ttip"
 	/>
 
 	<wp
 		type="THROW_GRENADE"
 		equipment="CR F1 Frag"
 		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
-		ttip="@menu_game_fg_ttip"
+		ttip="@menu_game_cr_f1fg_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_fg_none_ttip"
+		ttip_empty="@menu_game_cr_f1fg_none_ttip"
+	/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR F1 Frag Kit"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
+		ttip="@menu_game_cr_f1fg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_f1fg_none_ttip"
 	/>
 
     <wp
