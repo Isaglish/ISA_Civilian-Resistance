@@ -1,0 +1,104 @@
+<Entities>
+	<Entity name="CRVeteran" type="Human" editorAutoHeight="false" editorTags="friendly">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/cr_veteran.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm" attachSlot="vest_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="Civilian Resistance"
+			class="CRVeteran">
+
+			<Id name="CRVeteran" portrait="data/textures/portraits/cia1.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="100" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain suppressionRecovery="40.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="CRCovert" type="Human" editorAutoHeight="false" editorTags="friendly">
+		<RenderObject3D model="data/models/humans/civilian_male_standard.khm" diffuseTex="data/models/humans/cr_covert.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/male_shorthair.khm" diffuseTex="data/models/humans/attachments/male_shorthair.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/civilian_war_correspondent_vest.khm" diffuseTex="data/models/humans/attachments/civilian_war_correspondent_vest.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="Civilian Resistance"
+			class="CRCovert">
+
+			<Id name="CRCovert" portrait="data/textures/portraits/ranger55.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="30.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1" defaultMetersPerSec="2" max="9"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Concealment default="10" canHide="true"/>
+
+			<Equipment>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="CREngineer" type="Human" editorAutoHeight="false" editorTags="friendly">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/cr_engineer.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_grenadier_vest.khm" diffuseTex="data/models/humans/attachments/swat_sapper_vest.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/swat_vestcollar.khm" diffuseTex="data/models/humans/attachments/swat_vestcollar.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm" attachSlot="vest_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/swat_sidepouch.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="Civilian Resistance"
+			class="CREngineer">
+
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="20.0"/>
+			<Id name="CREngineer" portrait="data/textures/portraits/warcorrespondent.dds" gender="0" voicePack="male_very_american"/>
+			<Mobility>
+				<MoveSpeed min="1.0" defaultMetersPerSec="2.15" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+			</Equipment>
+		</Human>
+	</Entity>
+
+	<Entity name="CRFighter" type="Human" editorAutoHeight="false" editorTags="friendly">
+		<RenderObject3D model="data/models/humans/civilian_male_war_correspondent.khm" diffuseTex="data/models/humans/civilian_male_standard_03.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/civilian_war_correspondent_vest.khm" diffuseTex="data/models/humans/attachments/civilian_war_correspondent_vest.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="Civilian Resistance"
+			class="CRFighter">
+
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="10.0"/>
+			<Id name="CRFighter" portrait="data/textures/portraits/warcorrespondent.dds" gender="0" voicePack="male_very_american"/>
+
+			<Mobility>
+				<MoveSpeed min="1.0" defaultMetersPerSec="2.15" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Concealment default="7" canHide="true"/>
+
+			<Equipment>
+			</Equipment>
+		</Human>
+	</Entity>
+</Entities>

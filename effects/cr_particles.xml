@@ -1,0 +1,83 @@
+<Particles>
+    <ParticleSystem name="CR_TearGasExplosion" poolSize="2">
+        <Emitter name="centerpuff">
+            <Particle lifetime="0.200"/>
+            <Initial sizeX="2.000" sizeZ="2.000"/>
+            <Movement scaleEnd="2.000"/>
+            <Material mainTex="data/textures/fx/explosion_stinger.dds" colorize="403C3CD9">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="-1" endFrame="15"/>
+            </Material>
+        </Emitter>
+        <Emitter name="smoke" startDelay="0.050" duration="0.500" emitDelay="0.060" spawnBoxSizeX="0.200" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.200">
+            <Particle lifetime="2.000" lifetimeMax="3.500" mesh="data/models/fx/plane_tessellated_4.khm"/>
+            <Initial scale="0.700" scaleMax="0.500" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement speedY="2.000" speedYMax="10.000" speedZ="2.000" speedZMax="6.000" friction="0.060" scaleStart="0.700" scaleEnd="2.000" rotationPerSec="15.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.050" fadeOut="0.300" depthSorted="1" mainTex="data/textures/fx/smokepuff1.dds" colorize="595454D6">
+                <TextureAnimation frameWidth="64" frameHeight="64" startFrame="5" endFrame="10" animSpeed="0.5"/>
+            </Material>
+        </Emitter>
+        <Emitter name="" startDelay="0.300" duration="3.500" emitDelay="6.000" emitCount="2" spawnOffsetY="1.800">
+            <Particle lifetime="5.000"/>
+            <Initial sizeX="3.000" sizeZ="3.000"/>
+            <Movement scaleEnd="2.000"/>
+            <Material softThickness="0.200" fadeIn="0.050" fadeOut="0.700" loopAnimation="1" mainTex="data/textures/fx/atmospheric_gas.dds" colorize="6B6B6BB4">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="-1" endFrame="31" animSpeed="3"/>
+            </Material>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="CR_MiniBangExplosion" poolSize="8">
+        <Emitter name="radial dust" duration="0.100" emitDelay="1.000" spawnOffsetY="0.300">
+            <Particle lifetime="0.500"/>
+            <Initial scale="2.000" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.600" scaleEnd="1.200"/>
+            <Material fadeIn="0.100" fadeOut="0.200" blendMode="add_masked" mainTex="data/textures/fx/radialdust1.dds" colorize="ECCCBC89">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="distort" emitDelay="1.000" emitCount="0" spawnOffsetY="0.200">
+            <Particle lifetime="0.300"/>
+            <Initial scale="2.000"/>
+            <Movement scaleStart="1.500" scaleEnd="2.500"/>
+            <Material fadeIn="0.200" fadeOut="0.600" distortPostProcess="1" distortAmount="18.454" mainTex="data/textures/fx/distort_ring.tga" colorize="FFFFFFFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.100" uvScrollV1="0.100" uvDistortX="-0.050" uvDistortY="0.040"/>
+            </Material>
+        </Emitter>
+        <Emitter name="lingering dust" shape="rect" startDelay="0.200" duration="0.100" emitDelay="0.020" emitCount="4" spawnOffsetY="1.500" spawnBoxSizeX="0.100" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.100">
+            <Particle lifetime="1.000" lifetimeMax="2.000"/>
+            <Initial scaleMax="1.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="-0.200" speedXMax="0.400" speedY="0.100" speedYMax="0.400" speedZ="0.200" speedZMax="0.300" scaleStart="1.300" scaleEnd="1.000" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.400" fadeOut="0.800" lit="vert" mainTex="data/textures/fx/smokepuff1.dds" colorize="86868656">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks" duration="0.100" emitDelay="1.000" emitCount="24" spawnOffsetY="1.200">
+            <Particle lifetime="0.300" lifetimeMax="0.600"/>
+            <Initial scale="0.400" scaleMax="1.000" sizeX="2.000" sizeZ="0.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="5.000" speedXMax="12.000" speedY="1.000" speedYMax="2.000" friction="0.060" scaleEnd="0.200" direction="orient"/>
+            <Material fadeIn="0.300" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="FF8563FF"/>
+        </Emitter>
+        <Emitter name="explosion" duration="0.100" emitDelay="1.000" spawnOffsetY="1.400">
+            <Particle lifetime="2.000"/>
+            <Initial scale="1.600" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.700" scaleEnd="1.400"/>
+            <Material softThickness="0.100" fadeIn="0.100" fadeOut="0.600" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="128" frameHeight="128"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" emitCount="2" spawnOffsetY="1.500">
+            <Particle lifetime="0.800"/>
+            <Initial scale="1.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="1.800"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="flash1" startDelay="0.030" duration="0.100" emitDelay="1.000" spawnOffsetY="2.000">
+            <Particle lifetime="0.700"/>
+            <Initial scale="3.000" sizeX="2.000" sizeZ="2.000"/>
+            <Movement scaleEnd="0.600"/>
+            <Material fadeIn="0.001" fadeOut="0.300" blendMode="add_masked" depthTested="0" mainTex="data/textures/fx/glow_close.dds" colorize="FF9600FF"/>
+        </Emitter>
+    </ParticleSystem>
+</Particles>

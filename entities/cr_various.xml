@@ -1,0 +1,31 @@
+<Entities>
+	<Entity name="CR F1 Frag" type="Projectile" hideInEditor="true" scale="1.5">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/cr_f1frag.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/cr_f1frag.dds"/>
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1.0" sizeY="1.0" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="350" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+	</Entity>
+
+    <Entity name="CR Beancan Grenade" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/cr_beancan.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/cr_beancan.dds"/>
+		<!-- <RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1.0" sizeY="1.0" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="350" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D> -->
+	</Entity>
+
+	<Entity name="CR Beancan Impact" type="Projectile" hideInEditor="true" scale="1.5">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/cr_beancanimpact.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/cr_beancan.dds"/>
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1.0" sizeY="1.0" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="350" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+	</Entity>
+
+    <Entity name="CR_Light_Fuse" type="Light" editorAutoHeight="false" initialHeight="1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.2" sizeY="0.2" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="16" color="FF9D00FF" radiusMeters="0.1" animation="flicker" animRate="3.3" animAmount="0.3" animRandomStart="true"/>
+	</Entity>
+</Entities>

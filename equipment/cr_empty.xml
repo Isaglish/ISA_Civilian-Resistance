@@ -1,0 +1,20 @@
+<Equipment>
+    <Bind eqp="EmptyUtility" to="Civilian Resistance"/>
+
+    <Bind eqp="EmptyPrimary">
+        <!-- <to name="CRCovert"/>
+        <to name="CREngineer"/>
+        <to name="CRFighter"/> -->
+        <to name="Civilian Resistance"/>
+    </Bind>
+    <Bind eqp="EmptySecondary" to="Civilian Resistance"/>
+
+    <Bind eqp="EmptyHelmet" to="Civilian Resistance"/>
+    <Bind eqp="EmptyHelmetNVG" to="Civilian Resistance"/>
+
+    <Bind eqp="EmptyArmor" to="Civilian Resistance"/>
+    <Bind eqp="EmptySupportGear" to="Civilian Resistance"/>
+
+    <Bind eqp="EmptyPrimaryMuzzle" to="Civilian Resistance"/>
+    <Bind eqp="EmptySecondaryMuzzle" to="Civilian Resistance"/>
+</Equipment>

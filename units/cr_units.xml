@@ -1,0 +1,60 @@
+<Units>
+    <!--
+        'name' uniquely identifies this unit throughout the xml files (like in humans.xml)
+        'nameUI' is the localized version that shows up in the game's UI, therefore it's not unique		
+		'@#squadnamebabyseals' refers to the pool of random names assigned to a new BabySeals squad, defined in data/localization/seals_squadname_pool.txt
+		'supply' is how much a single trooper from that class will count in total supply allowed for a map. One slot = 100 supply
+    -->
+        <!-- flagColor="F58558" -->
+    <Unit
+        name="Civilian Resistance"
+        nameUI="@unit_resistance_name"
+        description="@unit_resistance_description"
+        flagTex="data/textures/gui/resistance_bg.dds"
+        flagColor="E87A4A"
+        rndNameEntry="@#squadnameresistance">
+
+        <Classes>
+			<!--
+				'name' links to a human defined in seals_humans.xml
+				'nameUI' is the localized version that shows up in the game's UI, therefore it's not unique
+			-->
+            <Class name="CRVeteran" nameUI="@unit_resistance_veteran" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_veteran.dds"/>
+			<Class name="CRCovert" nameUI="@unit_resistance_covert" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_covert.dds"/>
+			<Class name="CREngineer" nameUI="@unit_resistance_engineer" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_engineer.dds"/>
+            <Class name="CRFighter" nameUI="@unit_resistance_fighter" numSlots="8" supply="50" iconTex="data/textures/gui/deploy/class_icon_fighter.dds"/>
+        </Classes>
+
+        <TrooperRanks>
+            <Rank name="@resistance_rank_0" xpNeeded="0"         badgeTex="data/textures/gui/customization/cr_rank_01.dds"/>
+            <Rank name="@resistance_rank_1" xpNeeded="700"       badgeTex="data/textures/gui/customization/cr_rank_02.dds"/>
+            <Rank name="@resistance_rank_2" xpNeeded="2300"      badgeTex="data/textures/gui/customization/cr_rank_03.dds"/>
+            <Rank name="@resistance_rank_3" xpNeeded="5600"      badgeTex="data/textures/gui/customization/cr_rank_04.dds"/>
+            <Rank name="@resistance_rank_4" xpNeeded="11800"     badgeTex="data/textures/gui/customization/cr_rank_05.dds"/>
+            <Rank name="@resistance_rank_5" xpNeeded="22400"     badgeTex="data/textures/gui/customization/cr_rank_06.dds"/>
+            <Rank name="@resistance_rank_6" xpNeeded="38400"     badgeTex="data/textures/gui/customization/cr_rank_07.dds"/>
+            <Rank name="@resistance_rank_7" xpNeeded="60200"     badgeTex="data/textures/gui/customization/cr_rank_08.dds"/>
+            <Rank name="@resistance_rank_8" xpNeeded="86400"     badgeTex="data/textures/gui/customization/cr_rank_09.dds"/>
+            <Rank name="@resistance_rank_9" xpNeeded="126400"    badgeTex="data/textures/gui/customization/cr_rank_10.dds"/>
+        </TrooperRanks>
+
+        <Ranks>
+            <Rank xpNeeded="0"      badgeTex=""/>
+            <Rank xpNeeded="4000"   badgeTex=""/>
+            <Rank xpNeeded="9000"   badgeTex=""/>
+            <Rank xpNeeded="14980"  badgeTex=""/>
+            <Rank xpNeeded="21920"  badgeTex=""/>
+            <Rank xpNeeded="29800"  badgeTex=""/>
+            <Rank xpNeeded="38600"  badgeTex=""/>
+            <Rank xpNeeded="48310"  badgeTex=""/>
+            <Rank xpNeeded="58900"  badgeTex=""/>
+            <Rank xpNeeded="70360"  badgeTex=""/>
+            <Rank xpNeeded="82680"  badgeTex=""/>
+            <Rank xpNeeded="95820"  badgeTex=""/>
+            <Rank xpNeeded="109790" badgeTex=""/>
+            <Rank xpNeeded="124550" badgeTex=""/>
+            <Rank xpNeeded="140100" badgeTex=""/>
+            <Rank xpNeeded="156420" badgeTex=""/>
+        </Ranks>
+    </Unit>
+</Units>

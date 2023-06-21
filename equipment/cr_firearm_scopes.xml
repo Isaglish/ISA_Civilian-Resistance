@@ -1,0 +1,119 @@
+<Equipment>
+    <Scope name="CR_Holosight" unlockCost="3"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_rangersholo_name"
+			description="@scope_rangersholo_desc"
+			img="data/models/weapons/attachments/holosight_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_holosight_01.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_holosight_01b.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		<Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+100"
+					reloadEmptyTime="+110"
+					readyTime="+5"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-50"
+					maxAimTime2="-80"
+					resetTime="-50"
+					accuracyAdd="+50"
+					critChanceAdd="+2"
+
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-80"
+					maxAimTime2="-150"
+					resetTime="-100"
+					accuracyAdd="+10"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-80"
+					resetTime="-50"
+					accuracyAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-80"
+					maxAimTime2="-30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-30"
+					maxAimTime2="+0"
+				/>
+			</AttackTypeModifier>
+		</Params>
+	</Scope>
+    <Scope name="CR_M68CCO" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_rangersM68reddot_name"
+			description="@scope_rangersM68reddot_desc"
+			img="data/models/weapons/attachments/m68_cco_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_m68_cco.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_m68_cco.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+80"
+					reloadEmptyTime="+80"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-50"
+					maxAimTime2="-50"
+					resetTime="-20"
+					accuracyAdd="+50"
+					critChanceAdd="+2"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-50"
+					maxAimTime2="-150"
+					resetTime="-80"
+					accuracyAdd="+10"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-150"
+					maxAimTime2="-50"
+					resetTime="-50"
+					accuracyAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-50"
+					maxAimTime2="+0"
+				/>
+			</AttackTypeModifier>
+		</Params>
+	</Scope>
+</Equipment>

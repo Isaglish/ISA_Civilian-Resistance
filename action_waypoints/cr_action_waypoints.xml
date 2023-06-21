@@ -1,0 +1,112 @@
+<ActionWaypoints>
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR Tear Gas"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_teargas"
+		ttip="@menu_game_cr_tg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_tg_none_ttip"
+	/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR F1 Frag Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
+		ttip="@menu_game_fg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_fg_none_ttip"
+	/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR F1 Frag"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_f1frag"
+		ttip="@menu_game_fg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_fg_none_ttip"
+	/>
+
+    <wp
+		type="THROW_GRENADE"
+		equipment="CR Molotov Kit"
+		ui_prefix="data/textures/gui_ingame/waypoints/molotov"
+		ttip="@menu_game_molotov_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_molotov_none_ttip"
+    />
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR Mini Bang"
+		ui_prefix="data/textures/gui_ingame/waypoints/flashbang"
+		ttip="@menu_game_cr_mb_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_mb_none_ttip"
+	/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR Beancan Grenade Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_beancan"
+		ttip="@menu_game_cr_bcg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_bcg_none_ttip"
+	/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR Beancan Impact Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_beancanimpact"
+		ttip="@menu_game_cr_bcig_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_bcig_none_ttip"
+	/>
+
+	<wp
+		type="PLANT_EXPLOSIVES"
+		equipment="CR Door Charge"
+		ui_prefix="data/textures/gui_ingame/waypoints/charge_slap"
+		ttip="@menu_game_doorcharge_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_doorcharge_none_ttip"
+	/>
+
+	<wp
+		type="WAITING_FOR_DETONATION"
+		equipment="CR Door Charge"
+		ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
+		ttip="@menu_game_charges_detonate_ttip"
+	/>
+
+	<wp
+		type="PLANT_EXPLOSIVES"
+		equipment="CR Door Charge Kit"
+		ui_prefix="data/textures/gui_ingame/waypoints/charge_slap"
+		ttip="@menu_game_doorcharge_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_doorcharge_none_ttip"
+	/>
+
+	<wp
+		type="WAITING_FOR_DETONATION"
+		equipment="CR Door Charge Kit"
+		ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
+		ttip="@menu_game_charges_detonate_ttip"
+	/>
+
+	<wp
+		type="PLANT_EXPLOSIVES"
+		equipment="CR Demo Charge"
+		ui_prefix="data/textures/gui_ingame/waypoints/charge_breach"
+		ttip="@menu_game_democharges_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_charges_none_ttip"
+	/>
+
+	<wp
+		type="WAITING_FOR_DETONATION"
+		equipment="CR Demo Charge"
+		ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
+		ttip="@menu_game_charges_detonate_ttip"
+	/>
+</ActionWaypoints>

@@ -1,0 +1,76 @@
+# Units
+@unit_resistance_name=CIVILIAN RESISTANCE
+@unit_resistance_description=A local resistance comprised of ex-military and courageous civilian combatants coming from diverse backgrounds.
+
+@unit_resistance_veteran=VETERAN
+@unit_resistance_covert=COVERT
+@unit_resistance_engineer=ENGINEER
+@unit_resistance_fighter=FIGHTER
+
+
+# Trooper Ranks
+@resistance_rank_0=Recruit
+@resistance_rank_1=Grunt
+@resistance_rank_2=Bruiser
+@resistance_rank_3=Member
+@resistance_rank_4=Elite Member
+@resistance_rank_5=Veteran
+@resistance_rank_6=Warlord
+@resistance_rank_7=Chieftain
+@resistance_rank_8=Warchief
+@resistance_rank_9=Overlord
+
+
+# Equipment
+@helmet_cr_basiccap_name=Baseball Cap
+@helmet_cr_basiccap_desc=Perfect way to blend in with the locals while keeping sun, debris and flying brass out of your eyes.
+@helmet_cr_vetcap_name=Veteran Cap
+@helmet_cr_vetcap_desc=A baseball cap as a remembrance of your service. Also keep the blinding Nowheraki sun out of your face.
+@helmet_cr_headband_name=Headband
+@helmet_cr_headband_desc=Keeps sweat out of your eyes and also makes you look badass.\n\nDoesn't give any ballistic protection whatsoever. It does give you +100 style points though.
+@helmet_cr_pasgt_name=PASGT Helmet
+@helmet_cr_pasgt_desc=Due to the lack of helmets, you had to buy your own from an e-commerce site. The PASGT helmet provides ballistic protection while being lightweight and quite comfortable due to its padded interior.\n\nHas a 20% chance to stop critical shots from pistols and submachineguns.
+@helmet_cr_fastrf_name=Rifle Grade High-Cut
+@helmet_cr_fastrf_desc=A helmet you've aquired from when you were in military service, the RGHC gains a bit in weight to provide level III ballistic protection.\n\n10% chance to block critical shots from all pistols, submachineguns and most OpFor Assault Weapons. 
+
+
+# Utilities
+@grenade_cr_f1fragsingle_name=1x F1 Frag Grenade
+@grenade_cr_f1frag_name=2x F1 Frag Grenade
+@grenade_cr_f1frag_desc=A soviet hand grenade, these are by far the most common types of frag grenades you'd see in Nowheraki.\n\nThe F1 grenade has been supplied to various foreign countries over the years.\n\nUse Frags to take out enemies hidden in cover, but mind the non-combatants.\n\nFuse time: 1.5s\nKill Range: 2m\nInjury Range: 4m
+@grenade_cr_teargas_name=2x Tear Gas Grenade
+@grenade_cr_teargas_desc=Modified version of the smoke grenade, we don't know what the engineers put in this thing, they say it's a secret.\n\nThis thing when inhaled is apparently worse than pepper spray, so the engineers recommend us not to use it too much in tight spaces.\n\nFuse time: Instant\nBurn time: 14s
+@grenade_cr_beancan_name=1x Beancan Grenade
+@grenade_cr_beancan_desc=Thanks to our genius engineers, they managed to make us IEDs a little more powerful than your average military frag grenades, these things pack more punch due to their sizes thus making them a bit heavy, these things contain shrapnels like nails, screws, scrap metals, etc. Very lethal at point blank range.\n\nWho knew diarrhea isn't the only thing that's explosive?\n\nFuse time: 3s\nKill Range: 3.5m\nInjury Range: 6m
+@grenade_cr_beancanimpact_name= 1x Beancan Impact
+@grenade_cr_beancanimpact_desc=A bigger, baddier version of the Beancan Grenade, this one however detonates on impact so don't use this near friendlies or you're going to have a bad day. It is on the heavy side so expect to be slower.\n\nFuse time: Instant\nKill Range: 4m\nInjury Range: 6.5m
+@grenade_cr_molotov_kit_name=3x Molotov Bottle
+@grenade_cr_molotov_kit_desc=What's more than one? Three! You get 3x Molotov Bottles with this kit. They are pretty heavy though.\n\nUse these to flush enemies out of cover.\n\nFuse time: 1.5s\nInjury Range: 3m
+@grenade_cr_minibang_name=2x Mini Bang
+@grenade_cr_minibang_desc=A less effective and smaller version of the flashbang grenade- a mini bang. This will blind and deafen anyone within 2m of its detonation point, gaining you a few seconds of safety.\n\nFuse time: 1.5s\nEffective Range: 1.5m\nMax Range: 2.5m
+@cr_doorcharge_name=1x Door Charge
+@cr_doorcharge_kit_name=3x Door Charge
+@cr_doorcharge_desc=A medium size explosive charge balanced against the door to blow it off completely. Projects debris and splinter and creates overpressure in the area directly behind the door, so it is not safe to use near friendlies or non-combatants. Door? What door?\n\nPlacement time: 5s\nKill Range: 3.5m\nInjury Range: 7m
+@cr_demo_charge_name=1x Demolition Charge
+@cr_demo_charge_desc=Apparently it's really fun to make your own stuff, glad you took that engineering class, huh? Though I'm not sure if they teach you how to make explosives... This demo charge is powerful enough to crumble a wall portion. The blast is well localized, but overpressure can still endanger bystanders.\n\nPlacement time: 3s\nKill Range: 2m\nInjury Range: 5m
+
+
+# Armor
+@armor_cr_civiliansoft_name=Soft Armor
+@armor_cr_civiliansoft_desc=We took out the hard plates out of this, it's just difficult to provide armor to every single one of our members due to how expensive they can be.\n\nYou'd be stupid to not even wear one of these, you'd gain mobility and they offer a tiny bit of protection, AK rounds will pierce through these like butter however.
+@armor_cr_civilianII_name=Level II Civilian Armor
+@armor_cr_civilianII_desc=A civilian vest you can purchase at a military surplus store, very lightweight and can effectively protect the position of the heart and lungs, it cannot guarantee protection to the kidneys and abdomen, breathability is poor. It will cause some sweat to take it off every day.\n\nOffers protection against a wide range of ammunition, including higher-velocity 9mm and .357 Magnum rounds.
+@armor_cr_civilianIIIA_name=Level IIIA Civilian Armor
+@armor_cr_civilianIIIA_desc=A civilian vest you can purchase at a military surplus store, It's lightweight and flexible, so you won't feel like you're lugging around a suit of armor. It's like wearing a sneaky shield under your clothes.\n\nBut remember, this vest has its limits. It's not invincible against rifle rounds, so let's keep those expectations in check. It's like expecting a safety helmet to protect you from falling pianos- it's just not designed for that.
+@armor_cr_extended_name=Sappers Combat Vest
+@armor_cr_extended_desc=Some of our friends here at Nowheraki gave us these vests, lucky you, you get to wear it due to the dangerous nature of your job.\n\nThe vest offers reasonable rifle-grade protection from the front and back, but also covers the sides to some extent.\n\nThe vest sacrifices a lot of mobility, but Sappers are too valuable to be rabbits anyway. 
+
+
+# Ammo
+@ammo_762x25fmj_cr_name=7.62x25mm Tokarev Luger
+@ammo_762x25fmj_cr_desc=The 7.62x25mm Tokarev Luger cartridge is known for its high velocity and flat trajectory, making it effective at longer ranges compared to other pistol cartridges. It has good armor-piercing capabilities, with the ability to penetrate various types of body armor at close range. Additionally, it offers relatively low recoil, allowing for faster follow-up shots.
+
+
+# Pistols
+@firearm_tt_33_cr_name=Tokarev TT-33
+@firearm_tt_33_cr_desc=The TT-33 is known for its robustness and ease of maintenance, making it a popular choice among military and police forces.\n\nIts construction primarily consists of steel, which gives it durability and reliability. The grip is typically made of wood or synthetic materials.

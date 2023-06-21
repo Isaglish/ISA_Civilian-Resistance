@@ -1,0 +1,318 @@
+
+<FirearmAttackTypes>
+<!--
+	<ModifiableParams> - all of these can be modified by abilities
+		min/maxAimTime = This is the time it takes from when the weapon is ready&aimed at the enemy and until we shoot. The final aim time is interpolated between min/max distance to the target (minDistance = minAimTime, maxDistance = maxAimTime).
+		roundsPerSecondOverride = if defined (!= 0), it will overwrite the weapon's "roundsPerSecond" parameter
+		minShots = greater or equal to 1. if greater, then the min number of shots will be fired, even if the target is dead.
+		maxShots = number of shots before waiting "aimTime" again. A value is chosen randomly between min/maxShots, -1 to shoot continuously
+		resetTime = once a shot sequence has finished, we wait for this amount of time before the next shot sequence begins
+		accuracyAdd = modifier for the base accuracy of the weapon. 0 = exactly the weapon's base accuracy
+		followupShotAccuracyAdd = simulates recoil by adding to accuracyModiferPercent for each subsequent shot after the first one
+		critChanceAdd = percent to add to the base critical chance of the ammo
+-->
+
+<!-- SHOTGUN ATTACK TYPES Non-Veteran -->
+
+	<!-- PUMPED -->
+	<AttackType name="CR_NonVet_PumpAimedFire">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="400"
+			minShots="1"
+			maxShots="1"
+			resetTime="350"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+	
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PumpAimedFireLong">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="800"
+			minShots="1"
+			maxShots="1"
+			resetTime="600"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-1"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PumpAimedFireLongXX">
+		<ModifiableParams
+			minAimTime="800"
+			maxAimTime="1200"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="1100"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+<!-- PISTOL ATTACK TYPES Non-Veteran -->
+
+    <!-- 9mm -->
+
+	<AttackType name="CR_NonVet_PistolMagDump9mil">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="500"
+			roundsPerSecondOverride="5"
+			minShots="1"
+			maxShots="1"
+			resetTime="150"
+			accuracyAdd="-45"
+			followupShotAccuracyAdd="-2.5"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+	
+    <AttackType name="CR_NonVet_PistolAimedClose9mil">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="500"
+			roundsPerSecondOverride="3.5"
+			minShots="1"
+			maxShots="1"
+			resetTime="450"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="5"
+			critChanceAdd="15"
+		/>
+	</AttackType>
+
+    <AttackType name="CR_NonVet_ControlledPair9mil">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="350"
+			roundsPerSecondOverride="2.2"
+			minShots="1"
+			maxShots="2"
+			resetTime="300"
+			accuracyAdd="5"
+			followupShotAccuracyAdd="1.5"
+			critChanceAdd="15"
+		/>
+	</AttackType>
+
+    <AttackType name="CR_NonVet_PistolAimedFire9mil">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="800"
+			roundsPerSecondOverride="2"
+			minShots="1"
+			maxShots="1"
+			resetTime="350"
+			accuracyAdd="2.5"
+			followupShotAccuracyAdd="1"
+			critChanceAdd="7"
+		/>
+	</AttackType>
+
+    <AttackType name="CR_NonVet_PistolAimedFireLong9mil">
+		<ModifiableParams
+			minAimTime="850"
+			maxAimTime="1100"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="-45"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+    <AttackType name="CR_NonVet_PistolAimedFireLong9milXX">
+		<ModifiableParams
+			minAimTime="1100"
+			maxAimTime="1250"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="-60"
+			followupShotAccuracyAdd="0.5"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<!-- .45 -->
+
+	<AttackType name="CR_NonVet_PistolMagDump45">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="500"
+			roundsPerSecondOverride="5"
+			minShots="1"
+			maxShots="1"
+			resetTime="150"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2.5"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedClose45">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="500"
+			roundsPerSecondOverride="2.5"
+			minShots="1"
+			maxShots="1"
+			resetTime="550"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="4"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_ControlledPair45">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="350"
+			roundsPerSecondOverride="2"
+			minShots="1"
+			maxShots="2"
+			resetTime="350"
+			accuracyAdd="5"
+			followupShotAccuracyAdd="1.5"
+			critChanceAdd="18"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedFire45">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="800"
+			roundsPerSecondOverride="1.7"
+			minShots="1"
+			maxShots="1"
+			resetTime="550"
+			accuracyAdd="3"
+			followupShotAccuracyAdd="1.5"
+			critChanceAdd="9"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedFireLong45">
+		<ModifiableParams
+			minAimTime="850"
+			maxAimTime="1150"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="-45"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedFireLong45XX">
+		<ModifiableParams
+			minAimTime="1100"
+			maxAimTime="1300"
+			roundsPerSecondOverride="1"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="-60"
+			followupShotAccuracyAdd="0.5"
+			critChanceAdd="-20"
+		/>
+	</AttackType>
+
+	<!-- 7.62x25 Pistol -->
+
+	<AttackType name="CR_NonVet_PistolMagDump762">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="500"
+			roundsPerSecondOverride="5.2"
+			minShots="1"
+			maxShots="1"
+			resetTime="150"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="-2.5"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedClose762">
+		<ModifiableParams
+			minAimTime="300"
+			maxAimTime="500"
+			roundsPerSecondOverride="3"
+			minShots="1"
+			maxShots="1"
+			resetTime="550"
+			accuracyAdd="20"
+			followupShotAccuracyAdd="5"
+			critChanceAdd="10"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_ControlledPair762">
+		<ModifiableParams
+			minAimTime="250"
+			maxAimTime="350"
+			roundsPerSecondOverride="2.2"
+			minShots="1"
+			maxShots="2"
+			resetTime="350"
+			accuracyAdd="5"
+			followupShotAccuracyAdd="1.5"
+			critChanceAdd="18"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedFire762">
+		<ModifiableParams
+			minAimTime="500"
+			maxAimTime="800"
+			roundsPerSecondOverride="2"
+			minShots="1"
+			maxShots="1"
+			resetTime="550"
+			accuracyAdd="4"
+			followupShotAccuracyAdd="2.5"
+			critChanceAdd="12"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedFireLong762">
+		<ModifiableParams
+			minAimTime="850"
+			maxAimTime="1150"
+			roundsPerSecondOverride="1.2"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="-35"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="-10"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_PistolAimedFireLong762XX">
+		<ModifiableParams
+			minAimTime="1100"
+			maxAimTime="1300"
+			roundsPerSecondOverride="1.2"
+			minShots="1"
+			maxShots="1"
+			resetTime="175"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="0.5"
+			critChanceAdd="-15"
+		/>
+	</AttackType>
+</FirearmAttackTypes>

@@ -1,0 +1,8 @@
+@menu_game_cr_tg_ttip=Throw tear gas grenade
+@menu_game_cr_tg_none_ttip=Out of tear gas grenades
+@menu_game_cr_bcg_ttip=Throw beancan grenade
+@menu_game_cr_bcg_none_ttip=Out of beancan grenades
+@menu_game_cr_bcig_ttip=Throw beancan impact grenade
+@menu_game_cr_bcig_none_ttip=Out of beancan impact grenades
+@menu_game_cr_mb_ttip=Throw mini bang
+@menu_game_cr_mb_none_ttip=Out of mini bangs

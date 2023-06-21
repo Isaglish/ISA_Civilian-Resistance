@@ -1,0 +1,72 @@
+<Equipment>
+
+<!-- SHOTGUN AMMO -->
+
+	<Ammo name="CR_12GA00BUCK8_M500" unlockCost="5"
+			tooltip="@ammo_12GA00BUCK8_name"
+			description="@ammo_12GA00BUCK8_desc"
+			img="data/models/weapons/attachments/00_buck_ammo8_ui.dds"
+			>
+
+		<!-- defines base ROF and sound of weapon -->
+		<Params roundsPerSecond="1.5"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.5"
+				damageType="0"
+				silenced="0">
+
+			<!-- the damage value is linearly interpolated in the given range, between min/max damage -->
+			<Damage start="10" end="3" startDist="0" endDist="45"/>
+
+			<!-- base value, can be modified by AttackType/Abilities/Doctrine/etc. -->
+			<CriticalChancePercent start="12" end="5" startDist="7" endDist="25"/>
+
+			<!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
+			<ArmorPenetration start="4" end="2" startDist="0" endDist="20"/>
+		</Params>
+	</Ammo>
+
+	<Ammo name="CR_12GANO4BUCK_M500"
+			tooltip="@ammo_12GANO4BUCK_name"
+			description="@ammo_12GANO4BUCK_desc"
+			img="data/models/weapons/attachments/m257_buckshot_ammo24_ui.dds"
+		>
+
+		<!-- defines base ROF and sound of weapon -->
+		<Params roundsPerSecond="1.8"
+				audibleSoundRadius="50"
+				physicsImpactForce="1.8"
+				damageType="0"
+				silenced="0">
+
+			<!-- the damage value is linearly interpolated in the given range, between min/max damage -->
+			<Damage start="18" end="1" startDist="0" endDist="15"/>
+
+			<!-- base value, can be modified by AttackType/Abilities/Doctrine/etc. -->
+			<CriticalChancePercent start="5" end="3" startDist="0" endDist="7"/>
+
+			<!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
+			<ArmorPenetration start="1" end="0" startDist="0" endDist="10"/>
+		</Params>
+	</Ammo>
+	
+<!-- PISTOL AMMO -->
+
+	<Ammo name="CR_762x25FMJ_TT_33"
+			tooltip="@ammo_762x25fmj_cr_name"
+			description="@ammo_762x25fmj_cr_desc"
+			img="data/models/weapons/attachments/m882_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<Params	roundsPerSecond="5"
+				audibleSoundRadius="50"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+			<Damage start="30" end="20" startDist="0" endDist="100"/>
+			<CriticalChancePercent start="28" end="0" startDist="0" endDist="75"/>
+			<ArmorPenetration start="5.5" end="3" startDist="10" endDist="50"/>
+		</Params>
+	</Ammo>
+</Equipment>
