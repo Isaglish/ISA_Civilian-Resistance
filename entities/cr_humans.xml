@@ -20,7 +20,10 @@
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
+			<Concealment default="4" canHide="true"/>
+
 			<Equipment>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -47,6 +50,7 @@
 			<Concealment default="10" canHide="true"/>
 
 			<Equipment>
+				<Item name="Lockpick"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -64,14 +68,16 @@
 			class="CREngineer">
 
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
-			<Brain suppressionRecovery="20.0"/>
 			<Id name="CREngineer" portrait="data/textures/portraits/warcorrespondent.dds" gender="0" voicePack="male_very_american"/>
+			<Brain suppressionRecovery="20.0"/>
+
 			<Mobility>
 				<MoveSpeed min="1.0" defaultMetersPerSec="2.15" max="10"/>
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
 			<Equipment>
+				<Item name="Crowbar"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -87,8 +93,8 @@
 			class="CRFighter">
 
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
-			<Brain suppressionRecovery="10.0"/>
 			<Id name="CRFighter" portrait="data/textures/portraits/warcorrespondent.dds" gender="0" voicePack="male_very_american"/>
+			<Brain suppressionRecovery="10.0"/>
 
 			<Mobility>
 				<MoveSpeed min="1.0" defaultMetersPerSec="2.15" max="10"/>
@@ -98,6 +104,7 @@
 			<Concealment default="7" canHide="true"/>
 
 			<Equipment>
+				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
 	</Entity>
