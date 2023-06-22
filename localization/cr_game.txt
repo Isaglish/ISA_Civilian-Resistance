@@ -68,7 +68,7 @@
 @armor_cr_extended_desc=Some of our friends here at Nowheraki gave us these vests, lucky you, you get to wear it due to the dangerous nature of your job.\n\nThe vest offers reasonable rifle-grade protection from the front and back, but also covers the sides to some extent.\n\nThe vest sacrifices a lot of mobility, but Sappers are too valuable to be rabbits anyway. 
 
 @shield_cr_lvl3_name=Level III Shield
-@shield_cr_lvl3_desc=A protection device deployed by police, paramilitaries, and armed forces that are designed to stop or deflect bullets and other projectiles fired at their carrier. Offers protection against incoming rifle fire, but doesn't stop Armor Piercing threats.\n\nGreat against barricaded shooters and can help you cross fatal tunnels.
+@shield_cr_lvl3_desc=A protection device deployed by police, paramilitaries, and armed forces that are designed to stop or deflect bullets and other projectiles fired at their carrier.\n\nOffers protection against incoming rifle fire, but doesn't stop Armor Piercing threats.\n\nGreat against barricaded shooters and can help you cross fatal tunnels.
 
 # Ammo
 @ammo_762x25fmj_cr_name=7.62x25mm Tokarev Luger

@@ -2,7 +2,12 @@
 
 <!-- UTILITIES -->
 
+	<Bind eqp="Lockpick Machine">
+		<to name="CRCovert"/>
+	</Bind>
+
 	<!-- GRENADES -->
+
 	<Bind eqp="Smoke Grenade Single">
 		<to name="CRCovert"/>
 		<to name="CRFighter"/>
@@ -1001,17 +1006,18 @@
 	</Armor>
 
 	<Bind eqp="CR Shield Lvl III">
+		<to name="CRVeteran"/>
 		<to name="CREngineer"/>
 	</Bind>
 	<Shield name="CR Shield Lvl III" inventoryBinding="PrimaryWeapon" unlockCost="12"
 			tooltip="@shield_cr_lvl3_name"
 			description="@shield_cr_lvl3_desc"
 			img="data/models/equipment/shield_01_ui.dds"
-			movie="data/movies/shield.ogv"
 			holdBone="shield"
 			animationSet="shield"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-22" turnSpeedModifierPercent="-60"/>
+		<ConcealmentModifier add="-10"/>
 		<RenderObject3D model="data/models/equipment/shield_01.khm" diffuseTex="data/models/equipment/shield_01.dds" attachSlot="prop_back_rifle"/>
 
 		<ModifiableParams
@@ -1028,7 +1034,6 @@
 				particles="Hit_Metal_Shield"
 			/>
 
-			<!-- this gets applied to the weapon held in the right hand, when the shield is also equipped. 'AttackTypeModifier' does not work here.  -->
 			<EquipmentModifier>
 				<AddTo
 					reloadTime="+2000"

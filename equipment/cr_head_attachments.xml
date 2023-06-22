@@ -36,6 +36,7 @@
 	</Helmet>
 
 	<Bind eqp="CR_CapCovert">
+		<to name="CRVeteran"/>
 		<to name="CRCovert"/>
 	</Bind>
 	<Helmet name="CR_CapCovert" inventoryBinding="Helmet" unlockCost="0"

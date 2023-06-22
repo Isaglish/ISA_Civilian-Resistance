@@ -20,7 +20,9 @@
 			animationSet="shotgun_pump"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="-4"/>
 		<RenderObject3D model="data/models/weapons/m500pp.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m500pp.dds"/>
+
 		<ModifiableParams
 			numPellets="9"
 			roundsPerMagazine="5"
@@ -90,7 +92,7 @@
 		<to name="CR_M68CCO"/>
 		<to name="CR_Holosight"/>
 	</Bind>
-	<Firearm name="M4 Carbine CRVeteran" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="M4 Carbine CRVeteran" inventoryBinding="PrimaryWeapon" category="rifle"
 			tooltip="@firearm_m4_carabine_name"
 			description="@firearm_m4_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -98,6 +100,7 @@
 			animationSet="rifle"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-4"/>
 		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
 
 		<ModifiableParams
@@ -169,7 +172,7 @@
 		<to name="CR_M68CCO"/>
 		<to name="CR_Holosight"/>
 	</Bind>
-	<Firearm name="M4Sup CRVeteran" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+	<Firearm name="M4Sup CRVeteran" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="6"
 			tooltip="@firearm_m4Sup_carabine_name"
 			description="@firearm_m4Sup_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -177,6 +180,7 @@
 			animationSet="rifle"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-5.5"/>
 		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
 		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
 		<ModifiableParams
@@ -216,6 +220,161 @@
 			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="5.5"/>
 			<AttackType name="Rangers_RapidFireMed" rangeMeters="18"/>
 			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40"/>
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="556sup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MK18 CRVeteran">
+		<to name="CRVeteran"/>
+
+		<to name="556FMJM855_MK18"/>
+
+		<to name="IronSights"/>
+		<to name="CR_M68CCO"/>
+		<to name="CR_Holosight"/>
+	</Bind>
+	<Firearm name="MK18 CRVeteran" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+			tooltip="@firearm_mk18_name"
+			description="@firearm_mkl8_desc"
+			img="data/models/weapons/mk18_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-3.5"/>
+		<RenderObject3D model="data/models/weapons/mk18.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk18.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1800"
+			reloadEmptyTime="2500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="325"
+			guardTime="160"
+
+			accuracyStart="200"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="MK18Sup CRVeteran"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="3.5"/>
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="35"/>
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mk18_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MK18Sup CRVeteran">
+		<to name="CRVeteran"/>
+
+		<to name="556FMJM855_MK18Sup"/>
+
+		<to name="IronSights"/>
+		<to name="CR_M68CCO"/>
+		<to name="CR_Holosight"/>
+	</Bind>
+	<Firearm name="MK18Sup CRVeteran" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+			tooltip="@firearm_mk18Sup_name"
+			description="@firearm_mk18Sup_desc"
+			img="data/models/weapons/mk18_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-5"/>
+		<RenderObject3D model="data/models/weapons/mk18.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk18.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01b.dds"/>
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1900"
+			reloadEmptyTime="2650"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="355"
+			guardTime="190"
+
+			accuracyStart="200"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="MK18 CRVeteran"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="10.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="4.5"/>
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="18"/>
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="35"/>
 			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
 		</AttackTypes>
 

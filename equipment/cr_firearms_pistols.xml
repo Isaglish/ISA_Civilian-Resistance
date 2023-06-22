@@ -20,6 +20,7 @@
 			animationSet="pistol"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/m9.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
@@ -98,6 +99,7 @@
 			animationSet="pistol"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="-2.5"/>
 		<RenderObject3D model="data/models/weapons/m9_02.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
@@ -176,7 +178,7 @@
 			animationSet="pistol"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-1.8" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-1"/>
+		<ConcealmentModifier add="-1.5"/>
 		<RenderObject3D model="data/models/weapons/g19_cia.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19_cia.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
@@ -253,6 +255,7 @@
 			animationSet="pistol"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/g19x.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19x.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
@@ -329,6 +332,7 @@
 			animationSet="pistol"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-1.2" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/g2240.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g2240.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
@@ -405,6 +409,7 @@
 			animationSet="pistol"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/1911.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/1911_02.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
