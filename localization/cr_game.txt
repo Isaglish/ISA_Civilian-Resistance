@@ -47,8 +47,8 @@
 @grenade_cr_beancanimpact_name= 1x Beancan Impact
 @grenade_cr_beancanimpact_desc=A bigger, baddier version of the Beancan Grenade, this one however detonates on impact so don't use this near friendlies or you're going to have a bad day. It is on the heavy side so expect to be slower.\n\nFuse time: Instant\nKill Range: 4m\nInjury Range: 6.5m
 @grenade_cr_molotov_kit_name=3x Molotov Bottle
-@grenade_cr_minibang_name=2x Mini Bang
-@grenade_cr_minibang_desc=A less effective and smaller version of the flashbang grenade- a mini bang. This will blind and deafen anyone within 2m of its detonation point, gaining you a few seconds of safety.\n\nFuse time: 1.5s\nEffective Range: 1.5m\nMax Range: 2.5m
+@grenade_cr_diyflashbang_name=2x DIY Flashbang
+@grenade_cr_diyflashbang_desc=A bulkier and less potent alternative to military-grade flashbangs. It's made by using glass jar, some duct-tape, gunpowder, some fuel and oxidizer, and some mechanical component.\n\nThis will blind and deafen anyone within 2m of its detonation point, gaining you a few seconds of safety.\n\nFuse time: 2s\nEffective Range: 1m\nMax Range: 2m
 @cr_doorcharge_name=1x Door Charge
 @cr_doorcharge_kit_name=3x Door Charge
 @cr_doorcharge_desc=A medium size explosive charge balanced against the door to blow it off completely. Projects debris and splinter and creates overpressure in the area directly behind the door, so it is not safe to use near friendlies or non-combatants. Door? What door?\n\nPlacement time: 5s\nKill Range: 3.5m\nInjury Range: 7m

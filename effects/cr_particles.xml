@@ -26,7 +26,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="CR_MiniBangExplosion" poolSize="8">
+    <ParticleSystem name="CR_DIYFlashbangExpl" poolSize="8">
         <Emitter name="radial dust" duration="0.100" emitDelay="1.000" spawnOffsetY="0.300">
             <Particle lifetime="0.500"/>
             <Initial scale="2.000" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>

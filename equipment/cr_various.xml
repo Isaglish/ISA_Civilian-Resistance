@@ -524,25 +524,26 @@
 		<to name="CRVeteran"/>
 	</Bind>
 
-	<Bind eqp="CR Mini Bang">
+	<Bind eqp="CR DIY Flashbang">
 		<to name="CRCovert"/>
 		<to name="CRFighter"/>
 	</Bind>
-	<Grenade name="CR Mini Bang" inventoryBinding="UtilityPouch"
+	<Grenade name="CR DIY Flashbang" inventoryBinding="UtilityPouch"
 			quantity="2"
 
-			tooltip="@grenade_cr_minibang_name"
-			description="@grenade_cr_minibang_desc"
-			img="data/models/equipment/cr_minibang_ui.dds"
+			tooltip="@grenade_cr_diyflashbang_name"
+			description="@grenade_cr_diyflashbang_desc"
+			img="data/models/equipment/cr_diyflashbang_ui.dds"
 			movie="data/movies/flashbang.ogv"
 
 			animationSet="grenade"
 			soundUse="grenade_use"
 			soundUseVoice="VOX_GEAR_FLASH"
 		>
+		<!-- TODO: Make a DIY Flashbang model -->
 		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
-		<ConcealmentModifier add="-0.75"/>
-		<MobilityModifiers moveSpeedModifierPercent="-0.75" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1.5"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1.5" turnSpeedModifierPercent="0"/>
 
 		<!--
 		- throwTime is the full time required to throw it, it is split in half between when the hand starts moving and the grenade launches and the recovery
@@ -573,7 +574,7 @@
 
 			<!-- burn marks are randomly rotated/scaled for diversity -->
 			<FX
-				particles="CR_MiniBangExplosion"
+				particles="CR_DIYFlashbangExpl"
 				entity1="ExplosionLight"
 				entity2="explosion_mark"
 				randRotation2="true"
@@ -582,14 +583,14 @@
 				anim2D="">
 			</FX>
 
-			<EffectRange radiusMeters="1.5">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
+			<EffectRange radiusMeters="1.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="2000" outerRangeTimeMSec="2000"/>
 				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
 				<SuppressEffect amount="20"/>
 			</EffectRange>
 
-			<EffectRange radiusMeters="2.5">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
+			<EffectRange radiusMeters="2.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="2000" outerRangeTimeMSec="1250"/>
 				<SuppressEffect amount="20"/>
 			</EffectRange>
 		</Projectile>

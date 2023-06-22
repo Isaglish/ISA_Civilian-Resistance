@@ -6,5 +6,5 @@
 @menu_game_cr_bcg_none_ttip=Out of beancan grenades
 @menu_game_cr_bcig_ttip=Throw beancan impact grenade
 @menu_game_cr_bcig_none_ttip=Out of beancan impact grenades
-@menu_game_cr_mb_ttip=Throw mini bang
-@menu_game_cr_mb_none_ttip=Out of mini bangs
+@menu_game_cr_diyfb_ttip=Throw DIY flashbang
+@menu_game_cr_diyfb_none_ttip=Out of DIY flashbangs

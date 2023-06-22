@@ -56,11 +56,11 @@
 
 	<wp
 		type="THROW_GRENADE"
-		equipment="CR Mini Bang"
+		equipment="CR DIY Flashbang"
 		ui_prefix="data/textures/gui_ingame/waypoints/flashbang"
-		ttip="@menu_game_cr_mb_ttip"
+		ttip="@menu_game_cr_diyfb_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_cr_mb_none_ttip"
+		ttip_empty="@menu_game_cr_diyfb_none_ttip"
 	/>
 
 	<wp
