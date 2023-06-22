@@ -1,4 +1,11 @@
 <Entities>
+	<Entity name="CR DIY Flashbang" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/cr_diyflashbang.khm" diffuseTex="data/models/equipment/cr_diyflashbang.dds" reflections="true">
+			<Specular shininess="8" intensity="2.0"/>
+		</RenderObject3D>
+	</Entity>
+
 	<Entity name="CR RGD5 Frag" type="Projectile" hideInEditor="true" scale="1.5">
 		<PhysicalParams solid="false"/>
 		<RenderObject3D model="data/models/equipment/cr_rgd5frag.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/cr_rgd5frag.dds"/>

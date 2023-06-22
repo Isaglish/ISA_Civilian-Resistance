@@ -1,6 +1,15 @@
 <ActionWaypoints>
 	<wp
 		type="THROW_GRENADE"
+		equipment="CR Tear Gas Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_teargas"
+		ttip="@menu_game_cr_tg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_tg_none_ttip"
+	/>
+
+	<wp
+		type="THROW_GRENADE"
 		equipment="CR Tear Gas"
 		ui_prefix="data/textures/gui_ingame/waypoints/cr_teargas"
 		ttip="@menu_game_cr_tg_ttip"
@@ -57,7 +66,7 @@
 	<wp
 		type="THROW_GRENADE"
 		equipment="CR DIY Flashbang"
-		ui_prefix="data/textures/gui_ingame/waypoints/flashbang"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_diyflashbang"
 		ttip="@menu_game_cr_diyfb_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
 		ttip_empty="@menu_game_cr_diyfb_none_ttip"
