@@ -46,3 +46,12 @@
 # Long Barrel Suppressed
 <MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-4"/>
 <ConcealmentModifier add="-5"/>
+
+
+# LMG
+<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-5"/>
+<ConcealmentModifier add="-5"/>
+
+# LMG Suppressed
+<MobilityModifiers moveSpeedModifierPercent="-10.5" turnSpeedModifierPercent="-5.5"/>
+<ConcealmentModifier add="-6"/>

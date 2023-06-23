@@ -568,8 +568,8 @@
 			soundUseVoice="VOX_GEAR_FRAG"
 		>
 		<RenderObject3D model="data/models/equipment/cr_beancanimpact.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_beancan.dds"/>
-		<ConcealmentModifier add="-2"/>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-5.5" turnSpeedModifierPercent="-3.5"/>
+		<ConcealmentModifier add="-4"/>
 
 		<ModifiableParams
 			changeInTime="0"
@@ -1058,8 +1058,8 @@
 			crouchOnUse="true"
 		>
 		<RenderObject3D model="data/models/humans/attachments/backpack_breaching_charge.khm" attachSlot="vest_back_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/backpack_breaching_charge.dds"/>
-		<ConcealmentModifier add="-4" />
-		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="-5" />
+		<MobilityModifiers moveSpeedModifierPercent="-6" turnSpeedModifierPercent="-1"/>
 		<!-- this makes the item show on the back of the human, but we need a different model
 		<RenderObject3D model="data/models/equipment/breaching_charge.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/equipment/breaching_charge.dds"/>
 		-->

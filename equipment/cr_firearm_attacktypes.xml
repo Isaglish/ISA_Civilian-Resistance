@@ -567,4 +567,136 @@
 			critChanceAdd="-20"
 		/>
 	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafeShort">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="450"
+			minShots="4"
+			maxShots="12"
+			resetTime="300"
+			accuracyAdd="-50"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafe">
+		<ModifiableParams
+			minAimTime="450"
+			maxAimTime="700"
+			minShots="3"
+			maxShots="10"
+			resetTime="300"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2.5"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafeMed">
+		<ModifiableParams
+			minAimTime="700"
+			maxAimTime="1000"
+			minShots="3"
+			maxShots="7"
+			resetTime="500"
+			accuracyAdd="-20"
+			followupShotAccuracyAdd="1"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafeLong">
+		<ModifiableParams
+			minAimTime="1000"
+			maxAimTime="1000"
+			minShots="2"
+			maxShots="4"
+			resetTime="500"
+			accuracyAdd="-25"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafeLongXX">
+		<ModifiableParams
+			minAimTime="1000"
+			maxAimTime="1200"
+			minShots="1"
+			maxShots="3"
+			resetTime="500"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-2"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+
+	<AttackType name="CR_NonVet_LMGStrafeShortMounted">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="400"
+			minShots="7"
+			maxShots="25"
+			resetTime="100"
+			accuracyAdd="-40"
+			followupShotAccuracyAdd="-0.5"
+			critChanceAdd="1"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafeMounted">
+		<ModifiableParams
+			minAimTime="400"
+			maxAimTime="600"
+			minShots="5"
+			maxShots="25"
+			resetTime="120"
+			accuracyAdd="-25"
+			followupShotAccuracyAdd="-0.5"
+			critChanceAdd="3"
+		/>
+	</AttackType>
+
+
+	<AttackType name="CR_NonVet_LMGStrafeMedMounted">
+		<ModifiableParams
+			minAimTime="600"
+			maxAimTime="800"
+			minShots="4"
+			maxShots="14"
+			resetTime="120"
+			accuracyAdd="-17"
+			followupShotAccuracyAdd="1"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafeLongMounted">
+		<ModifiableParams
+			minAimTime="800"
+			maxAimTime="1000"
+			minShots="4"
+			maxShots="8"
+			resetTime="150"
+			accuracyAdd="-10"
+			followupShotAccuracyAdd="2"
+			critChanceAdd="0"
+		/>
+	</AttackType>
+
+	<AttackType name="CR_NonVet_LMGStrafeLongXXMounted">
+		<ModifiableParams
+			minAimTime="1000"
+			maxAimTime="1200"
+			minShots="1"
+			maxShots="3"
+			resetTime="250"
+			accuracyAdd="-30"
+			followupShotAccuracyAdd="0"
+			critChanceAdd="0"
+		/>
+	</AttackType>
 </FirearmAttackTypes>
