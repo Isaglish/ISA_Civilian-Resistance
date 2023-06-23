@@ -55,6 +55,7 @@
 
 	<Bind eqp="CR_CapHeadband">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
 		<to name="CRFighter"/>
 	</Bind>
@@ -74,6 +75,7 @@
 
 	<Bind eqp="CR_HelmetPASGT">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
 	</Bind>
 	<Helmet name="CR_HelmetPASGT" inventoryBinding="Helmet" unlockCost="6"

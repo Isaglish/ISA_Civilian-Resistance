@@ -2,9 +2,35 @@
 
 <!-- UTILITIES -->
 
-	<Bind eqp="Lockpick Machine">
-		<to name="CRCovert"/>
+	<!-- GEARS -->
+
+	<Bind eqp="Dynamic Hammer">
+		<to name="CREngineer"/>
 	</Bind>
+
+	<Bind eqp="CR TEC Torch">
+		<to name="CREngineer"/>
+	</Bind>
+	<TECTorch name="CR TEC Torch" inventoryBinding="UtilityPouch" unlockCost="3"
+			tooltip="@gear_cr_torch_name"
+			description="@gear_torch_desc"
+			img="data/models/equipment/tec_torch_ui.dds"
+			movie="data/movies/tec_torch.ogv"
+			quantity="2"
+
+			animationSet="tec_torch"
+			crouchOnUse="false"
+		>
+		<RenderObject3D model="data/models/equipment/tec_torch.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/tec_torch.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1" />
+		<ModifiableParams
+			efficiencyPercent="100"
+			changeInTime="1000"
+			changeOutTime="1000"
+			audibleSoundRadius="6"
+		/>
+	</TECTorch>
 
 	<!-- GRENADES -->
 
@@ -15,11 +41,13 @@
 
 	<Bind eqp="Smoke Grenade">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
 	</Bind>
 
 	<Bind eqp="Smoke Grenade Kit">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
 	</Bind>
 
@@ -214,6 +242,7 @@
 	</Grenade>
 
 	<Bind eqp="CR RGD5 Frag Single">
+		<to name="CRMG"/>
 		<to name="CRCovert"/>
 		<to name="CRFighter"/>
 	</Bind>
@@ -605,6 +634,7 @@
 	</Bind>
 
 	<Bind eqp="CR DIY Flashbang">
+		<to name="CRMG"/>
 		<to name="CRCovert"/>
 		<to name="CRFighter"/>
 	</Bind>
@@ -677,6 +707,7 @@
 
 	<Bind eqp="Molotov Single">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
 		<to name="CRFighter"/>
 	</Bind>
@@ -928,6 +959,7 @@
 
 	<Bind eqp="CR Civilian Soft Armor">
 		<to name="CRCovert"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
 		<to name="CRFighter"/>
 	</Bind>
@@ -948,6 +980,7 @@
 
 	<Bind eqp="CR Civilian LVL2">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 	</Bind>
@@ -968,6 +1001,7 @@
 
 	<Bind eqp="CR Civilian LVL3A">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 	</Bind>

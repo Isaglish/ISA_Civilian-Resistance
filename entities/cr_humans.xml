@@ -28,6 +28,35 @@
 		</Human>
 	</Entity>
 
+	<Entity name="CRMG" type="Human" editorAutoHeight="false" editorTags="friendly">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/cr_machinegunner.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/male_shorthair.khm" diffuseTex="data/models/humans/attachments/male_shorthair.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/swat_sidepouch.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm" attachSlot="vest_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg1.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg2.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="GoodGuy"
+			unit="Civilian Resistance"
+			class="CRMG">
+
+			<Id name="CRMG" portrait="data/textures/portraits/cia1.dds" gender="0" voicePack="male_very_american"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.7"/>
+			<Brain suppressionRecovery="30.0"/>
+
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="FeetOfSteel"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
 	<Entity name="CRCovert" type="Human" editorAutoHeight="false" editorTags="friendly">
 		<RenderObject3D model="data/models/humans/civilian_male_standard.khm" diffuseTex="data/models/humans/cr_covert.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/male_shorthair.khm" diffuseTex="data/models/humans/attachments/male_shorthair.dds"/>

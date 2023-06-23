@@ -19,7 +19,8 @@
 				'name' links to a human defined in seals_humans.xml
 				'nameUI' is the localized version that shows up in the game's UI, therefore it's not unique
 			-->
-            <Class name="CRVeteran" nameUI="@unit_resistance_veteran" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_veteran.dds"/>
+            <Class name="CRVeteran" nameUI="@unit_resistance_veteran" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_veteran.dds"/>
+            <Class name="CRMG" nameUI="@unit_resistance_machinegunner" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
 			<Class name="CRCovert" nameUI="@unit_resistance_covert" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_covert.dds"/>
 			<Class name="CREngineer" nameUI="@unit_resistance_engineer" numSlots="2" supply="150" iconTex="data/textures/gui/deploy/class_icon_engineer.dds"/>
             <Class name="CRFighter" nameUI="@unit_resistance_fighter" numSlots="8" supply="50" iconTex="data/textures/gui/deploy/class_icon_fighter.dds"/>

@@ -3,6 +3,7 @@
 @unit_resistance_description=A local resistance comprised of ex-military and courageous civilian combatants coming from diverse backgrounds.
 
 @unit_resistance_veteran=VETERAN
+@unit_resistance_machinegunner=MACHINEGUNNER
 @unit_resistance_covert=COVERT
 @unit_resistance_engineer=ENGINEER
 @unit_resistance_fighter=FIGHTER
@@ -35,6 +36,7 @@
 
 
 # Utilities
+@gear_cr_torch_name=2x Thermal Torch
 @grenade_cr_rgd5fragsingle_name=1x RGD5 Grenade
 @grenade_cr_rgd5frag_name=2x RGD5 Grenade
 @grenade_cr_rgd5frag_kit_name=3x RGD5 Grenade

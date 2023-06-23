@@ -4,7 +4,7 @@
 
     <!-- Non-Veteran -->
 
-	<Bind eqp="CR M500PP">
+	<Bind eqp="M500PP CR">
 		<to name="CREngineer"/>
     
 		<to name="CR_12GANO4BUCK_M500"/>
@@ -12,7 +12,7 @@
 
 		<to name="IronSights"/>
 	</Bind>
- 	<Firearm name="CR M500PP" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
+ 	<Firearm name="M500PP CR" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
 			tooltip="@firearm_m500pp_name"
 			description="@firearm_m500pp_desc"
 			img="data/models/weapons/m500_ui.dds"
