@@ -469,11 +469,11 @@
 		</Sounds>
 	</Firearm>
 
-<!-- COVERT -->
+<!-- Non-Veteran -->
 
 	<!-- M9 Pistol -->
 
-	<Bind eqp="M9 Pistol CRCovert">
+	<Bind eqp="M9 Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -482,7 +482,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="M9 Pistol CRCovert" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+	<Firearm name="M9 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="@firearm_m9_name"
 			description="@firearm_m9_desc"
 			img="data/models/weapons/m9_ui.dds"
@@ -517,7 +517,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="M9Sup Pistol CRCovert"
+			suppressedSwitch="M9Sup Pistol CR"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
 			ai_rangeMax="15.0"
@@ -552,7 +552,7 @@
 	</Firearm>
 
     <!-- M9sup Pistol -->
-	<Bind eqp="M9Sup Pistol CRCovert">
+	<Bind eqp="M9Sup Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -561,7 +561,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="M9Sup Pistol CRCovert" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
+	<Firearm name="M9Sup Pistol CR" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
 			tooltip="@firearm_m9sup_name"
 			description="@firearm_m9sup_desc"
 			img="data/models/weapons/m9_ui.dds"
@@ -596,7 +596,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="M9 Pistol CRCovert"
+			suppressedSwitch="M9 Pistol CR"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
@@ -633,7 +633,7 @@
 
     <!-- G19 Pistol -->
 
-	<Bind eqp="G19 Pistol CRCovert">
+	<Bind eqp="G19 Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -642,7 +642,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G19 Pistol CRCovert" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
+	<Firearm name="G19 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
 			tooltip="@firearm_g19_name"
 			description="@firearm_g19hp_desc"
 			img="data/models/weapons/g19_sup_ui.dds"
@@ -677,7 +677,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G19Sup Pistol CRCovert"
+			suppressedSwitch="G19Sup Pistol CR"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
 			ai_rangeMax="15.0"
@@ -711,7 +711,7 @@
 		</Sounds>
 	</Firearm>
 
-    <Bind eqp="G19Sup Pistol CRCovert">
+    <Bind eqp="G19Sup Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -720,7 +720,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G19Sup Pistol CRCovert" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost=""
+	<Firearm name="G19Sup Pistol CR" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost=""
 			tooltip="@firearm_g19sup_name"
 			description="@firearm_g19hpsup_desc"
 			img="data/models/weapons/g19_sup_ui.dds"
@@ -756,7 +756,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="G19 Pistol CRCovert"
+			suppressedSwitch="G19 Pistol CR"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_02_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
@@ -793,7 +793,7 @@
 
 	<!-- G17 Pistol -->
 
-	<Bind eqp="G17 Pistol CRCovert">
+	<Bind eqp="G17 Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -802,7 +802,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G17 Pistol CRCovert" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+	<Firearm name="G17 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="@firearm_g17_name"
 			description="@firearm_g17_desc"
 			img="data/models/weapons/g22_ui.dds"
@@ -872,7 +872,7 @@
 
 	<!-- G2240 Pistol -->
 
-	<Bind eqp="G2240 Pistol CRCovert">
+	<Bind eqp="G2240 Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -880,7 +880,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G2240 Pistol CRCovert" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
+	<Firearm name="G2240 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
 			tooltip="@firearm_g2240_name"
 			description="@firearm_g2240_desc"
 			img="data/models/weapons/g22_ui.dds"
@@ -950,7 +950,7 @@
 
 	<!-- 1911 Pistol -->
 
-	<Bind eqp="1911 Pistol CRCovert">
+	<Bind eqp="1911 Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -958,7 +958,7 @@
 
 		<to name="IronSights_Pistol1911"/>
 	</Bind>
-	<Firearm name="1911 Pistol CRCovert" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
+	<Firearm name="1911 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
 			tooltip="@firearm_1911_pistol_name"
 			description="@firearm_1911_pistol_desc"
 			img="data/models/weapons/1911_ui.dds"
@@ -1028,7 +1028,7 @@
 
 	<!-- HS45 Pistol -->
 
-	<Bind eqp="HS45 Pistol CRCovert">
+	<Bind eqp="HS45 Pistol CR">
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -1036,7 +1036,7 @@
 
 		<to name="IronSights_Pistol1911"/>
 	</Bind>
-	<Firearm name="HS45 Pistol CRCovert" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
+	<Firearm name="HS45 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
 			tooltip="@firearm_hs45_pistol_name"
 			description="@firearm_hs45_pistol_desc"
 			img="data/models/weapons/hs45_ui.dds"
@@ -1103,20 +1103,18 @@
 		</Sounds>
 	</Firearm>
 
-<!-- Non-Veteran -->
-
 	<!-- TT 33 Pistol -->
 
-	<Bind eqp="TT 33 Pistol CR">
+	<Bind eqp="TT33 Pistol CR">
 		<to name="CRCovert"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
-		<to name="CRFighter"/>
 	
 		<to name="CR_762x25FMJ_TT_33"/>
 
 		<to name="IronSights_Pistol1911"/>
 	</Bind>
-	<Firearm name="TT 33 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
+	<Firearm name="TT33 Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
 			tooltip="@firearm_tt_33_cr_name"
 			description="@firearm_tt_33_cr_desc"
 			img="data/models/weapons/tt_33_ui.dds"
