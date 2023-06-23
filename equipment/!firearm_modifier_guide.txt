@@ -1,0 +1,48 @@
+#
+# Modifiers
+#
+
+
+# Pistol
+<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+<ConcealmentModifier add="-1"/>
+
+# Pistol Suppressed
+<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+<ConcealmentModifier add="-2"/>
+
+
+# SMG
+<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+<ConcealmentModifier add="-1.5"/>
+
+# SMG Suppressed
+<MobilityModifiers moveSpeedModifierPercent="-3.5" turnSpeedModifierPercent="-1.5"/>
+<ConcealmentModifier add="-2.5"/>
+
+
+# Short Barrel
+<MobilityModifiers moveSpeedModifierPercent="-4.5" turnSpeedModifierPercent="-1.5"/>
+<ConcealmentModifier add="-2"/>
+
+# Short Barrel Suppressed
+<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
+<ConcealmentModifier add="-3"/>
+
+
+# Regular Barrel
+<MobilityModifiers moveSpeedModifierPercent="-5.5" turnSpeedModifierPercent="-2.5"/>
+<ConcealmentModifier add="-3"/>
+
+# Regular Barrel Suppressed
+<MobilityModifiers moveSpeedModifierPercent="-6" turnSpeedModifierPercent="-3"/>
+<ConcealmentModifier add="4"/>
+
+
+# Long Barrel
+<MobilityModifiers moveSpeedModifierPercent="-6.5" turnSpeedModifierPercent="-3.5"/>
+<ConcealmentModifier add="-4"/>
+
+# Long Barrel Suppressed
+<MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-4"/>
+<ConcealmentModifier add="-5"/>

@@ -23,7 +23,7 @@
 		>
 		<RenderObject3D model="data/models/equipment/tec_torch.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/tec_torch.dds"/>
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-1" />
+		<ConcealmentModifier add="-2" />
 		<ModifiableParams
 			efficiencyPercent="100"
 			changeInTime="1000"
@@ -35,6 +35,7 @@
 	<!-- GRENADES -->
 
 	<Bind eqp="Smoke Grenade Single">
+		<to name="CRVeteran"/>
 		<to name="CRCovert"/>
 		<to name="CRFighter"/>
 	</Bind>
@@ -96,7 +97,7 @@
 
 			friendlyFire="true"
 			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="2000"
+			triggerTimeAfterTargetHitMsec="3000"
 
 			physicsDetonationForce="5"
 			audibleLaunchSoundRadius="0"
@@ -159,7 +160,7 @@
 
 			friendlyFire="true"
 			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="2000"
+			triggerTimeAfterTargetHitMsec="3000"
 
 			physicsDetonationForce="5"
 			audibleLaunchSoundRadius="0"
@@ -222,7 +223,7 @@
 
 			friendlyFire="true"
 			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="2000"
+			triggerTimeAfterTargetHitMsec="3000"
 
 			physicsDetonationForce="5"
 			audibleLaunchSoundRadius="0"
@@ -242,6 +243,7 @@
 	</Grenade>
 
 	<Bind eqp="CR RGD5 Frag Single">
+		<to name="CRVeteran"/>
 		<to name="CRMG"/>
 		<to name="CRCovert"/>
 		<to name="CRFighter"/>
@@ -624,24 +626,25 @@
 		</Projectile>
 	</Grenade>
 	
+	<Bind eqp="Flashbang Single">
+		<to name="CRVeteran"/>
+	</Bind>
+
 	<Bind eqp="Flashbang">
 		<to name="CRVeteran"/>
-		<to name="CREngineer"/>
 	</Bind>
 
 	<Bind eqp="Flashbang Kit">
 		<to name="CRVeteran"/>
 	</Bind>
 
-	<Bind eqp="CR DIY Flashbang">
-		<to name="CRMG"/>
+	<Bind eqp="CR DIY Flashbang Single">
 		<to name="CRCovert"/>
-		<to name="CRFighter"/>
 	</Bind>
-	<Grenade name="CR DIY Flashbang" inventoryBinding="UtilityPouch"
-			quantity="2"
+	<Grenade name="CR DIY Flashbang Single" inventoryBinding="UtilityPouch"
+			quantity="1"
 
-			tooltip="@grenade_cr_diyflashbang_name"
+			tooltip="@grenade_cr_diyflashbangsingle_name"
 			description="@grenade_cr_diyflashbang_desc"
 			img="data/models/equipment/cr_diyflashbang_ui.dds"
 			movie="data/movies/flashbang.ogv"
@@ -651,8 +654,8 @@
 			soundUseVoice="VOX_GEAR_FLASH"
 		>
 		<RenderObject3D model="data/models/equipment/cr_diyflashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_diyflashbang.dds"/>
-		<ConcealmentModifier add="-1.5"/>
-		<MobilityModifiers moveSpeedModifierPercent="-1.5" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
 
 		<!--
 		- throwTime is the full time required to throw it, it is split in half between when the hand starts moving and the grenade launches and the recovery
@@ -675,7 +678,7 @@
 
 			friendlyFire="false"
 			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="1500"
+			triggerTimeAfterTargetHitMsec="1000"
 
 			physicsDetonationForce="30"
 			audibleLaunchSoundRadius="0"
@@ -705,12 +708,156 @@
 		</Projectile>
 	</Grenade>
 
-	<Bind eqp="Molotov Single">
+	<Bind eqp="CR DIY Flashbang">
+		<to name="CRMG"/>
+		<to name="CREngineer"/>
+		<to name="CRFighter"/>
+	</Bind>
+	<Grenade name="CR DIY Flashbang" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="@grenade_cr_diyflashbang_name"
+			description="@grenade_cr_diyflashbang_desc"
+			img="data/models/equipment/cr_diyflashbang_ui.dds"
+			movie="data/movies/flashbang.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+			soundUseVoice="VOX_GEAR_FLASH"
+		>
+		<RenderObject3D model="data/models/equipment/cr_diyflashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/cr_diyflashbang.dds"/>
+		<ConcealmentModifier add="-2"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1.5" turnSpeedModifierPercent="0"/>
+
+		<!--
+		- throwTime is the full time required to throw it, it is split in half between when the hand starts moving and the grenade launches and the recovery
+		- the effectRange Radius contains the previous one, but the effects do not concatenate
+		- explosion time is adjusted automatically depending on the distance to target, but have a minimum explosion time
+		-->
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="CR DIY Flashbang"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion="flash_expl"
+			soundHitFloor="grenade_hit_floor"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="1000"
+
+			physicsDetonationForce="30"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="25">
+
+			<!-- burn marks are randomly rotated/scaled for diversity -->
+			<FX
+				particles="CR_DIYFlashbangExpl"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				deleteAfterMS3="20000"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="1.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="2000" outerRangeTimeMSec="2000"/>
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="2.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="2000" outerRangeTimeMSec="1250"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+	<Bind eqp="CR Molotov Single">
 		<to name="CRVeteran"/>
 		<to name="CRMG"/>
 		<to name="CREngineer"/>
 		<to name="CRFighter"/>
 	</Bind>
+	<Grenade name="CR Molotov Single" inventoryBinding="UtilityPouch"
+			quantity="1"
+
+			tooltip="@grenade_molotov_name"
+			description="@grenade_molotov_desc"
+			img="data/models/equipment/molotov_ui.dds"
+			movie="data/movies/molotov.ogv"
+
+			soundUse="molotov_use"
+
+			animationSet="grenade"
+		>
+		<RenderObject3D model="data/models/equipment/mol_bottle.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/mol_bottle.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1500"
+			throwTimeCorner="1900"
+		/>
+
+		<!-- soundExplosion="glass_break" -->
+		<!-- soundOnSpawn="molotov_use" -->
+
+		<Projectile
+			bodyTemplate="MolotovThrownBottle"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			trailParticles="Molotov_Trail"
+			lightTemplate="Light_FireLarge"
+
+			soundFollow="fire"
+			soundHitFloor="glass_break"
+
+			friendlyFire="true"
+			triggerOnImpact="true"
+			triggerTimeAfterTargetHitMsec="0"
+
+			physicsDetonationForce="5"
+			audibleLaunchSoundRadius="2"
+			audibleDetonationSoundRadius="15"
+			>
+
+			<!-- spawn these when exploding -->
+			<FX
+				particles="Molotov_Explosion"
+				entity1="scorch_mark_molotov_central"
+				randRotation1="true"
+				entity2="fire_molotov"
+				deleteAfterMS2="15000"
+				entity3="Light_FireLarge"
+				deleteAfterMS3="15000"
+			/>
+
+			<Shrapnel projectileSource="Extra_MolotovShrapnel" min="4" max="6" spreadRadius="2.0" />
+
+			<EffectRange radiusMeters="1.0">
+				<DamageEffect chancePercent="100" damage="45" damageType="0"  armorPenetration="0"/>
+				<FireEffect durationMSec="8000"/>
+				<DOTEffect durationMSec="15000" dps="10.0"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="2.0">
+				<!-- <StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/> -->
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="30"/>
+				<!-- <SmokeEffect durationMSec="1030" /> -->
+			</EffectRange>
+		</Projectile>
+	</Grenade>
 
 	<Bind eqp="CR Molotov Kit">
 		<to name="CRVeteran"/>
@@ -729,7 +876,7 @@
 			animationSet="grenade"
 		>
 		<RenderObject3D model="data/models/equipment/mol_bottle.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/mol_bottle.dds"/>
-		<ConcealmentModifier add="-2"/>
+		<ConcealmentModifier add="-3"/>
 		<MobilityModifiers moveSpeedModifierPercent="-6" turnSpeedModifierPercent="-3"/>
 
 		<ModifiableParams
@@ -858,8 +1005,8 @@
 			soundUse="equip_charge"
 			crouchOnUse="true"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-2" />
+		<ConcealmentModifier add="-3" />
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="0"/>
 		<!-- Area2 contains Area1 (should be larger than..). The effects don't stack though. -->
 		<ModifiableParams
 			changeInTime="1200"
@@ -911,6 +1058,7 @@
 			crouchOnUse="true"
 		>
 		<RenderObject3D model="data/models/humans/attachments/backpack_breaching_charge.khm" attachSlot="vest_back_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/backpack_breaching_charge.dds"/>
+		<ConcealmentModifier add="-4" />
 		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-1"/>
 		<!-- this makes the item show on the back of the human, but we need a different model
 		<RenderObject3D model="data/models/equipment/breaching_charge.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/equipment/breaching_charge.dds"/>

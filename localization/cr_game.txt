@@ -44,14 +44,15 @@
 @grenade_cr_teargassingle_name=1x Tear Gas Grenade
 @grenade_cr_teargas_name=2x Tear Gas Grenade
 @grenade_cr_teargas_kit_name=3x Tear Gas Grenade
-@grenade_cr_teargas_desc=Modified version of the smoke grenade, we don't know what the engineers put in this thing, they say it's a secret.\n\nThis thing when inhaled is apparently worse than pepper spray, so the engineers recommend us not to use it too much in tight spaces.\n\nA duct-tape is wrapped around it to help us identify it from the smoke grenades.\n\nFuse time: 2s\nBurn time: 14s
+@grenade_cr_teargas_desc=Modified version of the smoke grenade, we don't know what the engineers put in this thing, they say it's a secret.\n\nThis thing when inhaled is apparently worse than pepper spray, so the engineers recommend us not to use it too much in tight spaces.\n\nA duct-tape is wrapped around it to help us identify it from the smoke grenades.\n\nFuse time: 3s\nBurn time: 14s
 @grenade_cr_beancan_name=1x Beancan Grenade
 @grenade_cr_beancan_desc=Thanks to our genius engineers, they managed to make us IEDs a little more powerful than your average military frag grenades, these things pack more punch due to their sizes thus making them a bit heavy, these things contain shrapnels like nails, screws, scrap metals, etc. Very lethal at point blank range.\n\nWho knew diarrhea isn't the only thing that's explosive?\n\nFuse time: 3s\nKill Range: 3.5m\nInjury Range: 6m
 @grenade_cr_beancanimpact_name= 1x Beancan Impact
 @grenade_cr_beancanimpact_desc=A bigger, baddier version of the Beancan Grenade, this one however detonates on impact so don't use this near friendlies or you're going to have a bad day. It is on the heavy side so expect to be slower.\n\nFuse time: Instant\nKill Range: 4m\nInjury Range: 6.5m
 @grenade_cr_molotov_kit_name=3x Molotov Bottle
+@grenade_cr_diyflashbangsingle_name=1x DIY Flashbang
 @grenade_cr_diyflashbang_name=2x DIY Flashbang
-@grenade_cr_diyflashbang_desc=A bulkier and less potent alternative to military-grade flashbangs. It's made by using glass jar, some duct-tape, gunpowder, some fuel and oxidizer, and some mechanical component.\n\nThis will blind and deafen anyone within 2m of its detonation point, gaining you a few seconds of safety.\n\nFuse time: 2s\nEffective Range: 1m\nMax Range: 2m
+@grenade_cr_diyflashbang_desc=A bulkier and less potent alternative to military-grade flashbangs. It's made by using glass jar, some duct-tape, gunpowder, some fuel and oxidizer, and some mechanical component.\n\nThis will blind and deafen anyone within 2m of its detonation point, gaining you a few seconds of safety.\n\nFuse time: 1s\nEffective Range: 1m\nMax Range: 2m
 @cr_doorcharge_name=1x Door Charge
 @cr_doorcharge_kit_name=3x Door Charge
 @cr_doorcharge_desc=A medium size explosive charge balanced against the door to blow it off completely. Projects debris and splinter and creates overpressure in the area directly behind the door, so it is not safe to use near friendlies or non-combatants. Door? What door?\n\nPlacement time: 5s\nKill Range: 3.5m\nInjury Range: 7m

@@ -19,7 +19,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/m9.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
@@ -98,8 +98,8 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
-		<ConcealmentModifier add="-2.5"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+		<ConcealmentModifier add="-2"/>
 		<RenderObject3D model="data/models/weapons/m9_02.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
@@ -160,6 +160,162 @@
 		</Sounds>
 	</Firearm>
 
+	<!-- G19 Pistol -->
+
+	<Bind eqp="G19 Pistol CRVeteran">
+		<to name="CRVeteran"/>
+
+		<to name="919FMJM882_G19X Pistol"/>
+		<to name="919FMJM1152_Handgun"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	<Firearm name="G19 Pistol CRVeteran" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
+			tooltip="@firearm_g19_name"
+			description="@firearm_g19hp_desc"
+			img="data/models/weapons/g19_sup_ui.dds"
+
+			animationSet="pistol"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		<RenderObject3D model="data/models/weapons/g19.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19.dds" skipGOSSAO="true"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="15"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1100"
+			reloadEmptyTime="1450"
+			changeInTime="700"
+			changeOutTime="865"
+			readyTime="85"
+			guardTime="50"
+
+			accuracyStart="120"
+			accuracyEnd="51"
+			accuracyStartDist="7"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedSwitch="G19Sup Pistol CRVeteran"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="4" priority="0"/>
+			<AttackType name="Rangers_ControlledPair9mil" rangeMeters="9" priority="0"/>
+			<AttackType name="Rangers_PistolAimedFire9mil" rangeMeters="15"/>
+			<AttackType name="Rangers_PistolAimedFireLong9mil" rangeMeters="22"/>
+			<AttackType name="Rangers_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="g19_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+    <Bind eqp="G19Sup Pistol CRVeteran">
+		<to name="CRVeteran"/>
+
+		<to name="919FMJM882_G19XSupSmall"/>
+		<to name="919FMJM1152_SupSmallHandgun"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	<Firearm name="G19Sup Pistol CRVeteran" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost=""
+			tooltip="@firearm_g19sup_name"
+			description="@firearm_g19hpsup_desc"
+			img="data/models/weapons/g19_sup_ui.dds"
+
+			animationSet="pistol"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+		<ConcealmentModifier add="-2"/>
+		<RenderObject3D model="data/models/weapons/g19.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19.dds" skipGOSSAO="true"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_02.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="15"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1180"
+			reloadEmptyTime="1550"
+			changeInTime="800"
+			changeOutTime="930"
+			readyTime="93"
+			guardTime="50"
+
+			accuracyStart="125"
+			accuracyEnd="51"
+			accuracyStartDist="7"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedSwitch="G19 Pistol CRVeteran"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_02_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="4" priority="0"/>
+			<AttackType name="Rangers_ControlledPair9mil" rangeMeters="9" priority="0"/>
+			<AttackType name="Rangers_PistolAimedFire9mil" rangeMeters="15"/>
+			<AttackType name="Rangers_PistolAimedFireLong9mil" rangeMeters="22"/>
+			<AttackType name="Rangers_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="m9sup_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 	<!-- G19 Custom Pistol -->
 
 	<Bind eqp="G19Custom Pistol CRVeteran">
@@ -177,7 +333,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-1.8" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
 		<ConcealmentModifier add="-1.5"/>
 		<RenderObject3D model="data/models/weapons/g19_cia.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19_cia.dds" skipGOSSAO="true"/>
 
@@ -331,7 +487,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-1.2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/g2240.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g2240.dds" skipGOSSAO="true"/>
 
@@ -408,7 +564,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/1911.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/1911_02.dds" skipGOSSAO="true"/>
 
@@ -489,7 +645,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/m9.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
@@ -568,8 +724,8 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
-		<ConcealmentModifier add="-2.5"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+		<ConcealmentModifier add="-2"/>
 		<RenderObject3D model="data/models/weapons/m9_02.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
 		<ModifiableParams
@@ -649,7 +805,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-0.8" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/g19.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19.dds" skipGOSSAO="true"/>
 
@@ -727,8 +883,8 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-0.8" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-2.5"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+		<ConcealmentModifier add="-2"/>
 		<RenderObject3D model="data/models/weapons/g19.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19.dds" skipGOSSAO="true"/>
 		<RenderObject3D model="data/models/weapons/attachments/silencer_02.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
 
@@ -794,6 +950,7 @@
 	<!-- G17 Pistol -->
 
 	<Bind eqp="G17 Pistol CR">
+		<to name="CRMG"/>
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -809,7 +966,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-1.2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/g2240.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g2240.dds" skipGOSSAO="true"/>
 
@@ -887,7 +1044,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-1.2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/g2240.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g2240.dds" skipGOSSAO="true"/>
 
@@ -951,6 +1108,7 @@
 	<!-- 1911 Pistol -->
 
 	<Bind eqp="1911 Pistol CR">
+		<to name="CRMG"/>
 		<to name="CRCovert"/>
 		<to name="CREngineer"/>
 
@@ -965,7 +1123,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/1911.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/1911_02.dds" skipGOSSAO="true"/>
 
@@ -1043,7 +1201,7 @@
 
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/hs45.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/hs45.dds" skipGOSSAO="true"/>
 
@@ -1120,7 +1278,7 @@
 			img="data/models/weapons/tt_33_ui.dds"
 			animationSet="pistol"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-1"/>
 		<RenderObject3D model="data/models/weapons/tt_33.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/tt_33.dds" skipGOSSAO="true"/>
 

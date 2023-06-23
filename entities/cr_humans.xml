@@ -20,7 +20,7 @@
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
-			<Concealment default="4" canHide="true"/>
+			<Concealment default="5" canHide="true"/>
 
 			<Equipment>
 				<Item name="FeetOfSteel"/>

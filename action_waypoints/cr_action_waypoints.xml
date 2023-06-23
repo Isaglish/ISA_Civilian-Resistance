@@ -54,6 +54,15 @@
 		ttip_empty="@menu_game_cr_rgd5fg_none_ttip"
 	/>
 
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR Molotov Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/molotov"
+		ttip="@menu_game_molotov_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_molotov_none_ttip"
+    />
+
     <wp
 		type="THROW_GRENADE"
 		equipment="CR Molotov Kit"
@@ -62,6 +71,15 @@
 		ttip_disabled="@menu_generic_cannot_use"
 		ttip_empty="@menu_game_molotov_none_ttip"
     />
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="CR DIY Flashbang Single"
+		ui_prefix="data/textures/gui_ingame/waypoints/cr_diyflashbang"
+		ttip="@menu_game_cr_diyfb_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_cr_diyfb_none_ttip"
+	/>
 
 	<wp
 		type="THROW_GRENADE"
