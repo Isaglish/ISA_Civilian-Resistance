@@ -857,6 +857,7 @@
 <!-- LMG Non-Veteran -->
 
 	<!-- RPK -->
+	
 	<Bind eqp="RPK CR">
 		<to name="CRVeteran"/>
 		<to name="CRMG"/>
@@ -938,6 +939,7 @@
 	</Firearm>
 
 	<!-- M249 -->
+
 	<Bind eqp="M249 CR">
 		<to name="CRMG"/>
 
@@ -1015,6 +1017,8 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
+
+	<!-- PKP -->
 
 	<Bind eqp="PKP CR">
 		<to name="CRMG"/>
