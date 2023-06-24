@@ -5,6 +5,7 @@
     <!-- Non-Veteran -->
 
 	<Bind eqp="M500PP CR">
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
     
 		<to name="CR_12GANO4BUCK_M500"/>
@@ -234,6 +235,465 @@
 		</Sounds>
 	</Firearm>
 
+	<!-- Non-Veteran -->
+
+	<Bind eqp="Mini Uzi CR">
+		<to name="CRCovert"/>
+		<to name="CREngineer"/>
+		<to name="CRFighter"/>
+
+		<to name="919FMJM882_MiniUzi"/>
+
+		<to name="IronSights_ConcealedSMG"/>
+	</Bind>
+	<Firearm name="Mini Uzi CR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+			tooltip="@firearm_miniuzicia_name"
+			description="@firearm_miniuzicia_desc"
+			img="data/models/weapons/mini_uzi_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+		<ConcealmentModifier add="-1.5"/>
+		<RenderObject3D model="data/models/weapons/mini_uzi.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mini_uzi.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="32"
+			closedBolt="0"
+
+			cyclicReload="0"
+			reloadTime="1700"
+			reloadEmptyTime="2300"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="400"
+			guardTime="170"
+
+			accuracyStart="70"
+			accuracyEnd="35"
+			accuracyStartDist="7"
+			accuracyEndDist="40"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="7.0"
+			ai_rangeMax="20.0"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_UziMagDump" rangeMeters="5"/>
+			<AttackType name="CR_NonVet_UziBurst" rangeMeters="10"/>
+			<AttackType name="CR_NonVet_UziBurstLong" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_UziBurstLong" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_UziAimedFire" rangeMeters="25"/>
+			<AttackType name="CR_NonVet_UziAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="uzi_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="Mini Uzi Pistol CR">
+		<to name="CRCovert"/>
+
+		<to name="919FMJM882_MiniUzi"/>
+
+		<to name="IronSights_ConcealedSMG"/>
+	</Bind>
+	<Firearm name="Mini Uzi Pistol CR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="5"
+			tooltip="@firearm_miniuzicia_name"
+			description="@firearm_miniuzinws_desc"
+			img="data/models/weapons/mini_uzi_ui_02.dds"
+
+			animationSet="pistol"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		<RenderObject3D model="data/models/weapons/mini_uzi_02.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mini_uzi.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="32"
+			closedBolt="0"
+
+			cyclicReload="0"
+			reloadTime="1400"
+			reloadEmptyTime="1900"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="210"
+			guardTime="140"
+
+			accuracyStart="85"
+			accuracyEnd="35"
+			accuracyStartDist="7"
+			accuracyEndDist="30"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="5.0"
+			ai_rangeMax="15.0"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_UziMagDump" rangeMeters="5"/>
+			<AttackType name="CR_NonVet_UziBurst" rangeMeters="10"/>
+			<AttackType name="CR_NonVet_UziBurstLong" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_UziBurstLong" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_UziAimedFire" rangeMeters="25"/>
+			<AttackType name="CR_NonVet_UziAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="uzi_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="APC9K CR">
+		<to name="CRCovert"/>
+		<to name="CREngineer"/>
+
+		<to name="919FMJM882_APC9K"/>
+
+		<to name="IronSights"/>
+		<to name="CR_M68CCO"/>
+	</Bind>
+	<Firearm name="APC9K CR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+			tooltip="@firearm_apc9k_name"
+			description="@firearm_apc9k_desc"
+			img="data/models/weapons/apc9k_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+		<ConcealmentModifier add="-1.5"/>
+		<RenderObject3D model="data/models/weapons/apc9k.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/apc9k.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2200"
+			reloadEmptyTime="2700"
+			changeInTime="800"
+			changeOutTime="800"
+			readyTime="350"
+			guardTime="160"
+
+			accuracyStart="100"
+			accuracyEnd="60"
+			accuracyStartDist="7"
+			accuracyEndDist="30"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedSwitch="APC9KSup CR"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="5.0"
+			ai_rangeMax="20.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_UziMagDump" rangeMeters="7"/>
+			<AttackType name="CR_NonVet_SMGBurstFire" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_CarbineAimedFire" rangeMeters="20"/>
+			<AttackType name="CR_NonVet_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="smg_eqp"/>
+			<Unequip name="smg_neqp"/>
+			<Reload name="smg_reld"/>
+			<ReloadEmpty name="smg_reldempt"/>
+			<Fire name="mp5a_fire"/>
+			<ShellDrop name="smg_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="APC9KSup CR">
+		<to name="CRCovert"/>
+		<to name="CREngineer"/>
+
+		<to name="919FMJM882_APC9KSup"/>
+
+		<to name="IronSights"/>
+		<to name="CR_M68CCO"/>
+	</Bind>
+	<Firearm name="APC9KSup CR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+			tooltip="@firearm_apc9kSup_name"
+			description="@firearm_apc9k_desc"
+			img="data/models/weapons/apc9k_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-3.5" turnSpeedModifierPercent="-1.5"/>
+		<ConcealmentModifier add="-2.5"/>
+		<RenderObject3D model="data/models/weapons/apc9k.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/apc9k.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2300"
+			reloadEmptyTime="2800"
+			changeInTime="800"
+			changeOutTime="800"
+			readyTime="390"
+			guardTime="160"
+
+			accuracyStart="100"
+			accuracyEnd="60"
+			accuracyStartDist="7"
+			accuracyEndDist="30"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			suppressedSwitch="APC9K CR"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="5.0"
+			ai_rangeMax="20.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_UziMagDump" rangeMeters="7"/>
+			<AttackType name="CR_NonVet_SMGBurstFire" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_CarbineAimedFire" rangeMeters="20"/>
+			<AttackType name="CR_NonVet_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="smg_eqp"/>
+			<Unequip name="smg_neqp"/>
+			<Reload name="smg_reld"/>
+			<ReloadEmpty name="smg_reldempt"/>
+			<Fire name="m9sup_fire"/>
+			<ShellDrop name="smg_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MP5K CR">
+		<to name="CRCovert"/>
+
+		<to name="919FMJM882_MiniUzi"/>
+		<to name="919FMJM1152_MiniUzi"/>
+
+		<to name="IronSights_ConcealedSMG"/>
+	</Bind>
+	<Firearm name="MP5K CR" inventoryBinding="SecondaryWeapon" category="rifle" unlockCost="5"
+			tooltip="@firearm_mp5k_name"
+			description="@firearm_mp5k_desc"
+			img="data/models/weapons/mp5k_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1" />
+		<RenderObject3D model="data/models/weapons/mp5k.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mp5k_pdw.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="0"
+
+			cyclicReload="0"
+			reloadTime="2300"
+			reloadEmptyTime="2300"
+			changeInTime="1000"
+			changeOutTime="1000"
+			readyTime="300"
+			guardTime="140"
+
+			accuracyStart="110"
+			accuracyEnd="50"
+			accuracyStartDist="10"
+			accuracyEndDist="60"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="mp5_mag"
+			suppressedSwitch="MP5KSup CR"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="5.0"
+			ai_rangeMax="12.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_UziMagDump" rangeMeters="4"/>
+			<AttackType name="CR_NonVet_RapidFireMed" rangeMeters="10"/>
+			<AttackType name="CR_NonVet_PistolAimedFireLong9mil" rangeMeters="20"/>
+			<AttackType name="CR_NonVet_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="smg_eqp"/>
+			<Unequip name="smg_neqp"/>
+			<Reload name="smg_reld"/>
+			<ReloadEmpty name="smg_reldempt"/>
+			<Fire name="mp5a_fire"/>
+			<ShellDrop name="smg_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="MP5KSup CR">
+		<to name="CRCovert"/>
+
+		<to name="919FMJM882_MiniUziSup"/>
+		<to name="919FMJM1152_MiniUziSup"/>
+
+		<to name="IronSights_ConcealedSMG"/>
+	</Bind>
+	<Firearm name="MP5KSup CR" inventoryBinding="SecondaryWeaponMuzzle" category="rifle" unlockCost="2"
+			tooltip="@firearm_mp5kSup_name"
+			description="@firearm_mp5kSup_desc"
+			img="data/models/weapons/mp5k_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2.5" turnSpeedModifierPercent="-0.5"/>
+		<ConcealmentModifier add="-2"/>
+		<RenderObject3D model="data/models/weapons/mp5k.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mp5k_pdw.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="0"
+
+			cyclicReload="0"
+			reloadTime="2500"
+			reloadEmptyTime="2600"
+			changeInTime="1100"
+			changeOutTime="1100"
+			readyTime="340"
+			guardTime="160"
+
+			accuracyStart="110"
+			accuracyEnd="50"
+			accuracyStartDist="10"
+			accuracyEndDist="60"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="mp5_mag"
+			suppressedSwitch="MP5K CR"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="5.0"
+			ai_rangeMax="12.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_UziMagDump" rangeMeters="5"/>
+			<AttackType name="CR_NonVet_RapidFireMed" rangeMeters="11"/>
+			<AttackType name="CR_NonVet_PistolAimedFireLong9mil" rangeMeters="21"/>
+			<AttackType name="CR_NonVet_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+	<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="smg_eqp"/>
+			<Unequip name="smg_neqp"/>
+			<Reload name="smg_reld"/>
+			<ReloadEmpty name="smg_reldempt"/>
+			<Fire name="m9sup_fire"/>
+			<ShellDrop name="smg_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 <!-- RIFLES -->
 
     <!-- Veteran -->
@@ -279,9 +739,6 @@
 			accuracyEndDist="100"
 		/>
 
-		<!-- <Params
-			suppressedSwitch="M4Sup"
-		/> -->
 		<Params
 			caliberInfoText="@firearm_caliber_556x45_name"
 			operationInfoText="@firearm_operation_semifull_name"
@@ -849,6 +1306,548 @@
 			<Reload name="rifle_reld"/>
 			<ReloadEmpty name="rifle_reldempt"/>
 			<Fire name="type56_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- Non-Veteran -->
+
+	<Bind eqp="AKM CR">
+		<to name="CREngineer"/>
+		<to name="CRFighter"/>
+
+		<to name="762x39FMJM43_Type56NWS"/>
+
+		<to name="IronSightsAK"/>
+		<to name="CR_PKAS"/>
+	</Bind>
+	<Firearm name="AKM CR" inventoryBinding="PrimaryWeapon" category="rifle"
+			tooltip="@firearm_akmcia_name"
+			description="@firearm_akmnws_desc"
+			img="data/models/weapons/akm_ui.dds"
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-6.5" turnSpeedModifierPercent="-3.5"/>
+		<ConcealmentModifier add="-4"/>
+		<RenderObject3D model="data/models/weapons/akm.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/akm.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2350"
+			reloadEmptyTime="3450"
+			changeInTime="850"
+			changeOutTime="850"
+			readyTime="450"
+			guardTime="200"
+
+			accuracyStart="170"
+			accuracyEnd="100"
+			accuracyStartDist="0"
+			accuracyEndDist="70"
+
+			suppressionScale="1.09"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="type56_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="15.0"
+			ai_rangeMax="45.0"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_MagDump" rangeMeters="5"/>
+			<AttackType name="CR_NonVet_RapidFireMed" rangeMeters="10"/>
+			<AttackType name="CR_NonVet_AKAimedFire" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_AKAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="type56_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- AKS74U -->
+
+	<Bind eqp="AKS74U CR">
+		<to name="CRCovert"/>
+		<to name="CREngineer"/>
+
+		<to name="545x39FMJ7N10_AKS74UCIA"/>
+
+		<to name="IronSightsAK"/>
+		<to name="CR_PKAS"/>
+	</Bind>
+	<Firearm name="AKS74U CR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
+			tooltip="@firearm_aks74ucia_name"
+			description="@firearm_aks74ucia_desc"
+			img="data/models/weapons/aks74u_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4.5" turnSpeedModifierPercent="-1.5"/>
+		<ConcealmentModifier add="-2"/>
+		<RenderObject3D model="data/models/weapons/AKS_74U.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/AKS_74U.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2000"
+			reloadEmptyTime="3000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="400"
+			guardTime="200"
+
+			accuracyStart="200"
+			accuracyEnd="100"
+			accuracyStartDist="0"
+			accuracyEndDist="60"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_545x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="aks_mag"
+			suppressedSwitch="AKS74USup CR"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="15.0"
+			ai_rangeMax="25.0"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_MagDump" rangeMeters="4.5"/>
+			<AttackType name="CR_NonVet_AKRapidFireMed" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_AKAimedFire" rangeMeters="25"/>
+			<AttackType name="CR_NonVet_AKAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="aks74u_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="AKS74USup CR">
+		<to name="CRCovert"/>
+		<to name="CREngineer"/>
+
+		<to name="545x39FMJ7N10_AKS74UCIASup"/>
+
+		<to name="IronSightsAK"/>
+		<to name="CR_PKAS"/>
+	</Bind>
+	<Firearm name="AKS74USup CR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+			tooltip="@firearm_aks74uciaSup_name"
+			description="@firearm_aks74uciaSup_desc"
+			img="data/models/weapons/aks74u_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="-3"/>
+		<RenderObject3D model="data/models/weapons/AKS_74U.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/AKS_74U.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2100"
+			reloadEmptyTime="3200"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="440"
+			guardTime="240"
+
+			accuracyStart="150"
+			accuracyEnd="80"
+			accuracyStartDist="0"
+			accuracyEndDist="50"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_545x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="aks_mag"
+			suppressedSwitch="AKS74U CR"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="15.0"
+			ai_rangeMax="25.0"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_MagDump" rangeMeters="6"/>
+			<AttackType name="CR_NonVet_AKRapidFireMed" rangeMeters="20"/>
+			<AttackType name="CR_NonVet_AKAimedFire" rangeMeters="25"/>
+			<AttackType name="CR_NonVet_AKAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="556sup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- AK Underfolder -->
+
+	<Bind eqp="Type56 CR">
+		<to name="CRCovert"/>
+		<to name="CREngineer"/>
+		<to name="CRFighter"/>
+
+		<to name="762x39FMJM43_Type56CIA"/>
+
+		<to name="IronSightsAK"/>
+	</Bind>
+	<Firearm name="Type56 CR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="2"
+			tooltip="@firearm_type56cia_name"
+			description="@firearm_type56cia_desc"
+			img="data/models/weapons/type56_ui.dds"
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4.5" turnSpeedModifierPercent="-1.5"/>
+		<ConcealmentModifier add="-2"/>
+		<RenderObject3D model="data/models/weapons/type56.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/type56.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2500"
+			reloadEmptyTime="3500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="500"
+			guardTime="200"
+
+			accuracyStart="150"
+			accuracyEnd="100"
+			accuracyStartDist="0"
+			accuracyEndDist="70"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="type56_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="15.0"
+			ai_rangeMax="45.0"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_MagDump" rangeMeters="6"/>
+			<AttackType name="CR_NonVet_AKRapidFireMed" rangeMeters="14"/>
+			<AttackType name="CR_NonVet_AKAimedFire" rangeMeters="20"/>
+			<AttackType name="CR_NonVet_AKAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="type56_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- M4 Carabine -->
+
+	<Bind eqp="M4 Carbine CR">
+		<to name="CREngineer"/>
+		<to name="CRFighter"/>
+
+		<to name="556FMJM855_M4"/>
+
+		<to name="IronSights"/>
+		<to name="CR_M68CCO"/>
+	</Bind>
+	<Firearm name="M4 Carbine CR" inventoryBinding="PrimaryWeapon" category="rifle"
+			tooltip="@firearm_m4_carabine_name"
+			description="@firearm_m4_carabine_desc"
+			img="data/models/weapons/m4_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-5.5" turnSpeedModifierPercent="-2.5"/>
+		<ConcealmentModifier add="-3"/>
+		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1800"
+			reloadEmptyTime="2500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="350"
+			guardTime="180"
+
+			accuracyStart="230"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="M4Sup CR"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="40.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_MagDump" rangeMeters="6"/>
+			<AttackType name="CR_NonVet_RapidFireMed" rangeMeters="15"/>
+			<AttackType name="CR_NonVet_CarbineAimedFire" rangeMeters="25"/>
+			<AttackType name="CR_NonVet_CarbineAimedFireLong" rangeMeters="35"/>
+			<AttackType name="CR_NonVet_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="m4_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="M4Sup CR">
+		<to name="CREngineer"/>
+		<to name="CRFighter"/>
+
+		<to name="556FMJM855_M4Sup"/>
+
+		<to name="IronSights"/>
+		<to name="CR_M68CCO"/>
+	</Bind>
+	<Firearm name="M4Sup CR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="6"
+			tooltip="@firearm_m4Sup_carabine_name"
+			description="@firearm_m4Sup_carabine_desc"
+			img="data/models/weapons/m4_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-6" turnSpeedModifierPercent="-3"/>
+		<ConcealmentModifier add="4"/>
+		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1950"
+			reloadEmptyTime="2700"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="400"
+			guardTime="210"
+
+			accuracyStart="230"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			suppressedSwitch="M4 Carbine CR"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="40.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_MagDump" rangeMeters="6.5"/>
+			<AttackType name="CR_NonVet_RapidFireMed" rangeMeters="18"/>
+			<AttackType name="CR_NonVet_CarbineAimedFire" rangeMeters="25"/>
+			<AttackType name="CR_NonVet_CarbineAimedFireLong" rangeMeters="35"/>
+			<AttackType name="CR_NonVet_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="556sup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<!-- M16A4 -->
+
+	<Bind eqp="M16A4 CR">
+		<to name="CREngineer"/>
+		<to name="CRFighter"/>
+
+		<to name="556FMJM855_M16A4"/>
+
+		<to name="IronSights"/>
+		<to name="CR_M68CCO"/>
+	</Bind>
+	<Firearm name="M16A4 CR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
+			tooltip="@firearm_m16a4_name"
+			description="@firearm_m16a4_desc"
+			img="data/models/weapons/m16a4_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-4"/>
+		<ConcealmentModifier add="-5"/>
+		<RenderObject3D model="data/models/weapons/m16a4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m16a4.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2400"
+			reloadEmptyTime="3200"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="450"
+			guardTime="220"
+
+			accuracyStart="300"
+			accuracyEnd="300"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556x45_name"
+			operationInfoText="@firearm_operation_semi3rdburst_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="14.0"
+			ai_rangeMax="25.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CR_NonVet_BurstFire" rangeMeters="5"/>
+			<AttackType name="CR_NonVet_RapidFireMed" rangeMeters="12"/>
+			<AttackType name="CR_NonVet_CarbineAimedFire" rangeMeters="30"/>
+			<AttackType name="CR_NonVet_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="m16_fire"/>
 			<ShellDrop name="rifle_shell_drop"/>
 			<Empty name="gen_empty"/>
 		</Sounds>

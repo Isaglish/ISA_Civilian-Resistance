@@ -1031,7 +1031,9 @@
 
 	<Bind eqp="G2240 Pistol CR">
 		<to name="CRCovert"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
+		<to name="CRFighter"/>
 
 		<to name="40FMJ180GR_G2240 Pistol"/>
 
@@ -1108,9 +1110,10 @@
 	<!-- 1911 Pistol -->
 
 	<Bind eqp="1911 Pistol CR">
-		<to name="CRMG"/>
 		<to name="CRCovert"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
+		<to name="CRFighter"/>
 
 		<to name="45FMJM1911_1911 Pistol"/>
 
@@ -1188,7 +1191,9 @@
 
 	<Bind eqp="HS45 Pistol CR">
 		<to name="CRCovert"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
+		<to name="CRFighter"/>
 
 		<to name="45FMJM1911_1911 Pistol"/>
 
@@ -1267,6 +1272,7 @@
 		<to name="CRCovert"/>
 		<to name="CRMG"/>
 		<to name="CREngineer"/>
+		<to name="CRFighter"/>
 	
 		<to name="CR_762x25FMJ_TT_33"/>
 

@@ -4,7 +4,6 @@ These are just the things I manage to keep track of, there are a lot more change
 ## Added
 - Added concealment to Veterans
 - Added Machinegunner class
-- Added short hair to Coverts
 - Added PASGT Helmet
 - Added Santa Hat
 - Added Headband

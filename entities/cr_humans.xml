@@ -58,7 +58,6 @@
 
 	<Entity name="CRCovert" type="Human" editorAutoHeight="false" editorTags="friendly">
 		<RenderObject3D model="data/models/humans/civilian_male_standard.khm" diffuseTex="data/models/humans/cr_covert.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/male_shorthair.khm" diffuseTex="data/models/humans/attachments/male_shorthair.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/civilian_war_correspondent_vest.khm" diffuseTex="data/models/humans/attachments/civilian_war_correspondent_vest.dds"/>
 		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100"/>
@@ -129,7 +128,7 @@
 				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
-			<Concealment default="7" canHide="true"/>
+			<Concealment default="5" canHide="true"/>
 
 			<Equipment>
 				<Item name="FeetOfSteel"/>

@@ -640,6 +640,7 @@
 
 	<Bind eqp="CR DIY Flashbang Single">
 		<to name="CRCovert"/>
+		<to name="CRFighter"/>
 	</Bind>
 	<Grenade name="CR DIY Flashbang Single" inventoryBinding="UtilityPouch"
 			quantity="1"
@@ -711,7 +712,6 @@
 	<Bind eqp="CR DIY Flashbang">
 		<to name="CRMG"/>
 		<to name="CREngineer"/>
-		<to name="CRFighter"/>
 	</Bind>
 	<Grenade name="CR DIY Flashbang" inventoryBinding="UtilityPouch"
 			quantity="2"
