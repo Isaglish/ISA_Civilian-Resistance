@@ -1,4 +1,15 @@
 <Entities>
+	<Bind eqp="CR Demo Charge">
+        <to name="door_elevator"/>
+        <to name="Wall"/>
+        <to name="Wall White"/>
+        <to name="Wall Brick"/>
+        <to name="Wall Stone Slabs"/>
+        <to name="fence_stone_01"/>
+        <to name="fence_stone_02"/>
+        <to name="fence_stone_03"/>
+    </Bind>
+
 	<Entity name="CR DIY Flashbang" type="Projectile" hideInEditor="true">
 		<PhysicalParams solid="false"/>
 		<RenderObject3D model="data/models/equipment/cr_diyflashbang.khm" diffuseTex="data/models/equipment/cr_diyflashbang.dds" reflections="true">

@@ -28,3 +28,13 @@ These are just the things I manage to keep track of, there are a lot more change
 - Changed the Engineer's human model
 - Changed the texture of the Engineer's vest
 - Changed the name of the class 'Guerrilla' to 'Fighter'
+
+
+# VERSION 1.0.1
+
+## Balanced
+- Engineer's supply: 150 => 100
+- Changed several troopers' mobility to default values
+
+## Fixed
+- Fixed Demo/Door Charges not being usable

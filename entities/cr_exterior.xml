@@ -1,0 +1,23 @@
+<Entities>
+    <Bind eqp="CR Demo Charge">
+        <to name="gate_metal_large"/>
+        <to name="garage_door"/>
+        <to name="garage_door_small"/>
+        <to name="fence_metal_01"/>
+        <to name="fence_metal_02"/>
+        <to name="fence_metal_02_02"/>
+        <to name="fence_metal_02_03"/>
+        <to name="fence_metal_corner_01"/>
+        <to name="window_single_metal_bars"/>
+    </Bind>
+
+    <Bind eqp="CR Door Charge">
+        <to name="window_single_metal_bars"/>
+        <to name="door_grate_01_locked"/>
+    </Bind>
+
+    <Bind eqp="CR Door Charge Kit">
+        <to name="window_single_metal_bars"/>
+        <to name="door_grate_01_locked"/>
+    </Bind>
+</Entities>
