@@ -23,6 +23,13 @@
 			<Concealment default="5" canHide="true"/>
 
 			<Equipment>
+				<Item name="M4 Carbine CRVeteran"/>
+				<Item name="IronSights"/>
+				<Item name="M9 Pistol CRVeteran"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="Smoke Grenade"/>
+				<Item name="CR RGD5 Frag"/>
+				<Item name="CR_CapVeteran"/>
 				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>
@@ -51,6 +58,13 @@
 			</Mobility>
 
 			<Equipment>
+				<Item name="RPK CR"/>
+				<Item name="IronSights"/>
+				<Item name="G17 Pistol CR"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="CR RGD5 Frag Single"/>
+				<Item name="Smoke Grenade"/>
+				<Item name="CR_CapHeadband"/>
 				<Item name="Crowbar"/>
 			</Equipment>
 		</Human>
@@ -77,6 +91,11 @@
 			<Concealment default="10" canHide="true"/>
 
 			<Equipment>
+				<Item name="G17 Pistol CR"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="CR RGD5 Frag Single"/>
+				<Item name="CR DIY Flashbang Single"/>
+				<Item name="CR_CapCovert"/>
 				<Item name="Lockpick"/>
 			</Equipment>
 		</Human>
@@ -104,6 +123,12 @@
 			</Mobility>
 
 			<Equipment>
+				<Item name="AKM CR"/>
+				<Item name="G17 Pistol CR"/>
+				<Item name="CR Tear Gas"/>
+				<Item name="CR RGD5 Frag"/>
+				<Item name="CR Door Charge Kit"/>
+				<Item name="CR_CapBaseball"/>
 				<Item name="Crowbar"/>
 			</Equipment>
 		</Human>
@@ -131,6 +156,9 @@
 			<Concealment default="5" canHide="true"/>
 
 			<Equipment>
+				<Item name="AKM CR"/>
+				<Item name="CR RGD5 Frag Single"/>
+				<Item name="CR RGD5 Frag Single"/>
 				<Item name="FeetOfSteel"/>
 			</Equipment>
 		</Human>

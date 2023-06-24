@@ -876,7 +876,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G19Sup Pistol CR" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost=""
+	<Firearm name="G19Sup Pistol CR" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="2"
 			tooltip="@firearm_g19sup_name"
 			description="@firearm_g19hpsup_desc"
 			img="data/models/weapons/g19_sup_ui.dds"

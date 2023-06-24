@@ -861,6 +861,7 @@
 
 	<Bind eqp="CR Molotov Kit">
 		<to name="CRVeteran"/>
+		<to name="CRMG"/>
 		<to name="CREngineer"/>
 	</Bind>
 	<Grenade name="CR Molotov Kit" inventoryBinding="SupportGear1" unlockCost="3"

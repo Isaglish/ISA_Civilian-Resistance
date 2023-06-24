@@ -1866,7 +1866,7 @@
 		<to name="IronSights"/>
 		<to name="CR_PKAS"/>
 	</Bind>
-	<Firearm name="RPK CR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="1"
+	<Firearm name="RPK CR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="@firearm_rpknws_name"
 			description="@firearm_rpknws_desc"
 			img="data/models/weapons/rpk_ui.dds"
