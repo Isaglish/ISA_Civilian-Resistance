@@ -46,4 +46,9 @@
 		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.2" sizeY="0.2" hideInGame="true" disableDepthTest="true"/>
 		<Light type="Point" colorMultiplier="16" color="FF9D00FF" radiusMeters="0.1" animation="flicker" animRate="3.3" animAmount="0.3" animRandomStart="true"/>
 	</Entity>
+
+	<Entity name="DiscardedRPG7" type="BasicEntity" hideInEditor="true">
+		<PhysicalParams physicsEnabled="true" solid="false" density="32" />
+		<RenderObject3D model="data/models/weapons/rpg7.khm" diffuseTex="data/models/weapons/rpg7.dds"/>
+	</Entity>
 </Entities>

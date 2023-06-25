@@ -81,3 +81,7 @@
 # Pistols
 @firearm_tt_33_cr_name=Tokarev TT-33
 @firearm_tt_33_cr_desc=The TT-33 is known for its robustness and ease of maintenance, making it a popular choice among military and police forces.\n\nIts construction primarily consists of steel, which gives it durability and reliability. The grip is typically made of wood or synthetic materials.
+
+# Launchers
+@firearm_rpg7_cr_name=RPG-7 Launcher
+@firearm_rpg7_cr_desc=The RPG-7 is a portable, shoulder-launched anti-tank rocket-propelled grenade launcher. It was developed by the Soviet Union and introduced in 1961. The RPG-7 has become one of the most widely used and recognized anti-tank weapons worldwide.\n\nDeploy time: 3s\nLethal Blast Range: 2m

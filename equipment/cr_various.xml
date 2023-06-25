@@ -1103,4 +1103,119 @@
 
 		</Params>
 	</ExplosiveCharge>
+
+<!-- ROCKET LAUNCHERS -->
+	<Bind eqp="CR RPG7">
+		<to name="CREngineer"/>
+
+		<to name="338_SniperRifle"/> <!-- ammo doesn't do anything, needed to avoid errors -->
+	</Bind>
+	<Firearm name="CR RPG7" inventoryBinding="SupportGear1" category="rpg" unlockCost="6"
+			tooltip="@firearm_rpg7_cr_name"
+			description="@firearm_rpg7_cr_desc"
+			img="data/models/weapons/rpg7_ui.dds"
+			animationSet="rpg7"
+			movie="data/movies/rocket_launcher.ogv"
+			discardWithEntityWhenEmpty="DiscardedRPG7"
+		>
+		<RenderObject3D model="data/models/weapons/rpg7.khm" attachSlot="prop_back_rpg" skipGOSSAO="true" diffuseTex="data/models/weapons/rpg7.dds">
+			<Specular shininess="32" intensity="4.0"/>
+		</RenderObject3D>
+		<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-5"/>
+		<ConcealmentModifier add="-5"/>
+
+		<ModifiableParams
+			projectilesPerMagazine="1"
+
+			reloadTime="6000"
+			reloadEmptyTime="6000"
+			changeInTime="1300"
+			changeOutTime="600"
+			readyTime="700"
+			guardTime="300"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_93mmHEAT_name"
+			operationInfoText="@firearm_operation_singleshot_name"
+			ai_rangeMin="10.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="300.0"
+			ai_stopWhenShooting="true"
+		/>
+
+
+		<AttackTypesProjectile>
+			<AttackType name="CIA_RPG_QuickAimClose" rangeMeters="14"/>
+			<AttackType name="CIA_RPG_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge">
+			<Flare particles="RpgLaunch_01" />
+		</MuzzleFlash>
+
+		<Projectile
+			bodyTemplate="Rpg7RocketBody"
+			trailParticles="RpgTrail"
+			lightTemplate="Rocket Red"
+
+			soundExplosion="rpg_expl"
+			soundOnSpawn="rpg7_fire"
+			soundFollow="rpg_fly_travel"
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="3.0"
+
+			minVelocity="2.0"
+			maxVelocity="20.0"
+			acceleration="8.0"
+			mass="0.0"
+			friendlyFire="true"
+			triggerOnImpact="true"
+
+			roundsPerSecond="1.0"
+			accuracyPercent="65"
+			physicsDetonationForce="100"
+			audibleLaunchSoundRadius="15"
+			audibleDetonationSoundRadius="100"
+			>
+
+			<FX
+				particles="RpgExplosion"
+				entity1="ExplosionLight"
+				entity2="Explosion Scorch Mark"
+				entity3="FX_dust_large"
+				deleteAfterMS3="35000"
+				anim2D="">
+			</FX>
+`
+			<EffectRange radiusMeters="2">
+				<DamageEffect chancePercent="100" damage="999" damageType="2"/>
+				<SuppressEffect amount="50"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="3">
+				<DamageEffect chancePercent="100" damage="10" damageType="1"/>
+				<StunEffect chancePercent="50" innerRangeTimeMSec="1000" outerRangeTimeMSec="200"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="30"/>
+				<SmokeEffect durationMSec="1900" />
+			</EffectRange>
+
+			<EffectRange radiusMeters="5">
+				<StunEffect chancePercent="50" innerRangeTimeMSec="500" outerRangeTimeMSec="300"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="30"/>
+			</EffectRange>
+		</Projectile>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<!-- <Reload name="rifle_reld"/> -->
+			<!-- <ReloadEmpty name="rifle_reldempt"/> -->
+			<!-- <Fire name="type56_fire"/> -->
+			<!-- <ShellDrop name="rifle_shell_drop"/> -->
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
 </Equipment>

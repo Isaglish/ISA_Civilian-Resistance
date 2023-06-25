@@ -155,4 +155,13 @@
 		ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
 		ttip="@menu_game_charges_detonate_ttip"
 	/>
+
+	<wp
+		type="ROCKET_LAUNCHER"
+		equipment="CR RPG7"
+		ui_prefix="data/textures/gui_ingame/waypoints/rocket_launcher"
+		ttip="@menu_game_rocketlaunch_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"
+	/>
 </ActionWaypoints>
