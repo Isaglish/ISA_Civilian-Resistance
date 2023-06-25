@@ -38,3 +38,11 @@ These are just the things I manage to keep track of, there are a lot more change
 
 ## Fixed
 - Fixed Demo/Door Charges not being usable
+
+
+# VERSION 1.0.2
+
+## Added
+- Added SVD Dragunov Sniper Rifle
+- Added FN FAL Rifle
+- Added RPG-7 Rocket Launcher
